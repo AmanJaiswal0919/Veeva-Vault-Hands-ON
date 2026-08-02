@@ -1,0 +1,46 @@
+Veeva Vault PromoMats Scenario
+
+1-RITM0459974
+
+Prob-Could you please fill the field "Planned date of first Use" with "14/04/2026" on document 26HP0569WF please? Sol-Open the document and go to key dates fill the given date in "Planned date of first Use" then Save
+
+2-RITM0459656
+
+Prob-Give the access of these EVA attached sheet to User
+
+Sol-Open the each EVA sheet found that this document is for Central America just provide the Central America Affiliate values in User Role Setup
+
+3-RITM0460583
+
+Sol-Open the document found that In Approval State
+
+Prob-Document Deletion
+
+So if document In Approval State->Cancel Workflow->Document in Draft->Delete the Document
+
+If document Approved for Use->Expired the Document
+
+4-RITM0476434
+
+Prob-User was not able to see product code after placeholder creation in document number appearing like this M--UK-00296
+
+Sol-Replicate this in Sandbox open the product TTS and just add "TTS" in document number abbreviation field Now create a placeholder country United Kingdom and fill required field->Save
+
+you will see M-TTS-UK-0002 in document number i.e Correct
+
+5-RITM0481047
+
+Prob-Change Role in Middle of Workflow
+
+Sol-Participant has active account in PromoMats so we can't change the role here tell workflow owner add new user by clicking "add participants" and then task will go to both old participant and new participant if user want task should not go to old participant and
+
+then tell workflow owner simply cancel the task for old participant. open the document->Timeline View->Review Stage->3dots->Add Participant
+
+
+
+
+
+
+
+
+
