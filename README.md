@@ -1,1 +1,0 @@
-# Veeva-Vault-Hands-ON
