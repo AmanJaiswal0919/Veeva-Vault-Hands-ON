@@ -127,3 +127,90 @@ Notification Template-Approved, Reciepants-Workflow Owner
 19) End
 Type-End of Workflow
 End Workflow
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+1)
+Lifecycle Role-Initiator LI
+Application Role-Initiator AI
+tick Enable Dynamic Access Control
+Allowed Group-All Users& Groups
+Sharing Rules
+Country
+Permission
+Draft-In Review In Approval
+View Document, View Content, Edit Field, Edit Relationship,
+Edit Sharing Setting, Annotate, Create Anchors, Version,
+Download Source, Edit Document
+Approved for Use
+View Document, View Content
+Aman Test1=>Initiator AI, India
+
+2)
+Lifecycle Role-Regulatory Reviewer LI
+Application Role-Regulatory Reviewer AI
+tick Enable Dynamic Access Control
+Allowed Group-All Users& Groups
+Sharing Rules
+Country, Promotion Type, Product, Document Type Group
+Permission
+Draft In Review In Approval Approved for Use
+View Document, View Content
+Yash Test2=>Regulatory Reviewer AI, India, Non Promotional, Material, COVERSYL
+
+3)
+Lifecycle Role-Medical Reviewer LI
+Application Role-Medical Reviewer AI
+tick Enable Dynamic Access Control
+Allowed Group-All Users& Groups
+Sharing Rules
+Country, Document Type Group
+Permission
+Draft In Review In Approval Approved for Use
+View Document, View Content
+Harsh Test3=>Medical Reviewer AI, India, Material
+
+4)
+Lifecycle Role-Head Compliance LI
+Application Role-Head Compliance AI
+tick Enable Dynamic Access Control
+Allowed Group-All Users& Groups
+Sharing Rules
+Country, Product, Document Type Group
+Permission
+Draft In Review In Approval Approved for Use
+View Document, View Content
+Rahul Test4=>Head Compliance AI, India, Material, COVERSYL
+
+5) Available for Material, Material GMPA, Training Material, Material UK
+Create Picklist
+Type of Workflow
+Path1-Promotional
+Path2-Non Promotional/Training/Medical
+
+Add these picklist values in Field Dependencies for India Country in Type of Workflow Field
+
+6)User Action
+Country equals India
+Type of Workflow includes Path1-Promotional, Path2-Non Promotional/Training/Medical
+Workflow
+IndiaworkflowTestUsers
+Starts: Promotional for India
+
+7) Placeholder
+
+Country-India
+Promotion Type-Promotional
+Type of Workflow-Path1-Promotional
+then
+Initiator Name will be India-Initiator AI, Aman Test1
+Medical Reviewer Name will be India-Material-Medical Reviewer AI, Harsh Test3
+Head Compliance Name will be COVERSYL-India-Material-Head Compliance AI, Rahul Test4
+
+Country-India
+Promotion Type-Non Promotional, Training, Medical
+Type of Workflow-Path2-Non Promotional/Training/Medical
+then
+Initiator Name will be India-Initiator AI, Aman Test1
+Regulatory Reviewer Name will be COVERSYL-India-Material-Non Promotional-Regulatory Reviewer AI, Yash Test2
+Head Compliance Name will be COVERSYL-India-Material-Head Compliance AI, Rahul Test4
