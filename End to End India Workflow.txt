@@ -1,0 +1,185 @@
+India Workflow Process End to End
+
+1) Start
+
+Type-Start, Next Steps-Type of Workflow Instruction-Start: 'Path1-Promotional for a document:$(docName} Instruction-Start: 'Path2-Non Promotional' for a document:$(docName}
+
+Participants Label-Initiator Name Add Participants-Allow workflow initiator to select participants Role allowed to participate-Initiator LI Allow task instruction for these participants
+
+Participants Label-Regulatory Reviewer Name
+
+Add Participants-Allow workflow initiator to select participants Role allowed to participate-Regulatory Reviewer LI
+
+Default users from sharing setting
+
+Participants Label-Medical Reviewer Name Add Participants-Allow workflow initiator to select participants Role allowed to participate-Medical Reviewer LI Default users from sharing setting
+
+Participants Label-Head Compliance Name Add Participants-Allow workflow initiator to select participants Role allowed to participate-Head Compliance LI Default users from sharing setting
+
+Hidden for Path1
+
+Hidden
+
+Regulatory Reviewer Name, Instruction Control 2 Text(Document.type of material_c)='Path1-Promotional'
+
+
+Hidden for Path2
+
+Hidden
+
+Medical Reviewer Name, Instruction Control 1
+
+Text(Document.type_of material_c)='Path2-Promotional'
+
+2) Type of Workflow
+
+Type-Decision, Next Step-Determined by Rules
+
+If Type of Workflow all equals Path1-PromotionalPath1: In Review
+
+If not
+
+3) Path1: In Review
+
+>Path2: In Review
+
+Type-Action, Next Step-Medical Reviewer
+
+Always Change Item to lifecycle State In Review
+
+5)Medical Reviewer
+
+Type-Task, Next Step-MA
+
+Label-MA Review the Document, Assign Task to Medical Reviewer Name
+
+Assign to all users in participant group.
+
+Task Requirement-Required, Due Date Formula, Prompt for Verdict Multiple Verdict
+
+Verdict Label-Approved, Verdict Label-Change Required
+
+ObjectTaskReminderNotification
+
+TaskOwner
+
+Task DueDate +3Days
+
+Task DueDate +1Days
+
+Task DueDate +Days
+
+7)MA Type-Decision, Next Step-Determined by Rules
+
+If Task: Medical Reviewer all labels equal Approved > Approved by MR If not
+
+Initiator: Changes by MR
+
+
+9) Approved by MR
+
+Type-Notification, Next Step-State Change: In Approval
+
+Notification Template-Approved, Reciepants-Workflow Owner
+
+10) Initiator: Changes by MR
+
+Type-Task, Next Step-Medical Reviewer
+
+Task Label-Workflow Owner: Changes Required, Assign Task to Workflow Owner
+
+Instruction-kindly make correction for a document $(document), Task Requirement-Required Due Date Formula, tick Prompt for Comments, Comment Label Please add your comment Notification Template-General Task Assigned For Documents
+
+tick Include verdicts and comments from previous task
+
+Select Task Medical Reviewer
+
+ObjectTaskReminderNotification
+
+TaskOwner
+
+Task DueDate +3Days
+
+Task DueDate +1Days
+
+Task DueDate +0Days
+
+13) State Change: In Approval
+
+Type-Action, Next Step-Head Compliance
+
+Always Change Item to lifecycle State In Approval
+
+14) Head Compliance
+
+Type-Task, Next Step-HC
+
+Label-HC Review the Document, Assign Task to Head Compliance Name
+
+Assign to all users in participant group
+
+Task Requirement-Required, Due Date Formula, Prompt for Verdict Multiple Verdict Verdict Label-Approved, Verdict Label-Change Required
+
+ObjectTaskReminderNotification
+
+TaskOwner
+
+Task DueDate +3Days Task DueDate +1Days
+
+Task DueDate +0Days
+
+15)HC
+
+Type-Decision, Next Step-Determined by Rules
+
+If Task: Head Compliance all labels equal Approved >
+
+State Change: Approved for Use
+
+If not
+
+> Initiator: Changes by HC
+
+16) State Change: Approved for Use
+
+Type-Action, Next Step-Approved by HC
+
+Always Change Item to lifecycle State Approved for Use
+
+17) Initiator: Changes by HC
+
+Type-Task, Next Step-Head Compliance
+
+Task Label-Workflow Owner: Changes Required, Assign Task to Workflow Owner
+
+Instruction-kindly make correction for a document $(document), Task Requirement-Required
+
+Due Date Formula, tick Prompt for Comments, Comment Label Please add your comment
+
+Notification Template-General Task Assigned For Documents
+
+tick Include verdicts and comments from previous task
+
+Select Task Medical Reviewer
+
+ObjectTaskReminderNotification
+
+TaskOwner
+
+Task DueDate +3Days
+
+Task DueDate +1Days
+
+Task QueDate +0Days
+
+18) Approved by HC
+
+Type-Notification, Next Step-End
+
+Notification Template-Approved, Reciepants-Workflow Owner
+
+19) End
+
+Type-End of Workflow
+
+End Workflow
