@@ -36,6 +36,34 @@ Sol-Participant has active account in PromoMats so we can't change the role here
 
 then tell workflow owner simply cancel the task for old participant. open the document->Timeline View->Review Stage->3dots->Add Participant
 
+6-INC0910302
+Here User request to assign a Medical Director Role to Frederic user and deactivate Angela user previously medical director was assigned to Angela 
+
+Sol- Tell user first raise an ritm for deactivation angela account and then tell workflow owner to reassign the role because in this case  previously assigned user is deactivated now here you can change the role one user to another user
+
+open the document->Timeline View->In ApprovalStage->3dots->Reassign (Angela to Federic)
+
+Note- In this case for role assignment make sure new user whether its reassign or add have relevant role permission in user role setup of their account. like tell all this thing assign federic to Medical Director in user role setup of his account.
+
+7-RITM0466592
+Initiator is not able to select required participant  after starting the workflow
+
+Sol-Read only user cant participate in workflow change user profile and licence type read only user to srv document user and full user
+
+8-INC0928411
+user is not able to start the workflow button is not visible
+
+Sol-Just assign the Initiator with Country role permission to user
+
+9-RITM0501428
+Activate bulk updation feature
+this must be external user(email is not include servier)
+Agency+country+document type-reference
+Agency+country+document type-multichannel content
+group-approved email and clm group not include country user in this
+application licence-external user
+
+10-
 
 
 
