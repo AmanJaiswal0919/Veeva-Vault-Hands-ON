@@ -2,34 +2,38 @@ Good Morning.
 
 First of all thankyou so much for allowing me to introduce myself.
 
-My name is Aman Jaiswal I have 2yrs experience at TCS where my primary responsibility is to provide L2 LEVEL support for Veeva PromoMats Application. coming to my education I did btech in ECE from GGSIPU In my current role I interact with business user troubleshoot application related issues handling incident and service request and provide support for veeva monthly release activities Rightnow I am seeking an opportunity where I further inhance my technical expertise and grow my tech career in application support and development.
+My name is Aman Jaiswal I have 2yrs experience at TCS where my primary responsibility 
+is to provide L2 LEVEL support for Veeva PromoMats Application. 
+coming to my education I did btech in ECE from GGSIPU In my current role I interact 
+with business user troubleshoot application related issues handling incident and 
+service request and provide support for veeva monthly release activities Rightnow I am seeking 
+an opportunity where I further inhance my technical expertise and grow my tech career 
+in application support and development.
 
 1- What is Veeva Vault?
 
-It is a cloud based content management system used by life science companies to manage regulated content, automate review and approval workflow, maintain audit trail version control and ensure compliance with regulatory requirement and provide secure access to content throughout its lifecycle.
+It is a cloud based content management system used by life science companies to manage 
+regulated content, automate review and approval workflow, maintain audit trail 
+version control and ensure compliance with regulatory requirement and provide secure 
+access to content throughout its lifecycle.
 
 2- What is PromoMats?
 
 PromoMats stand for Promotional Material It is used to manage promotional and marketing content
-
 through review and approval workflow to ensure regulatory compliance.
 
 Modules in PromoMats
 
-1) MLR Review-manage the medical, legal and regulatory review process with workflow and approval. 2) Claims Management-stores and manages promotional claims, link claims to reference and
-
-tracks claim usage across content. 3)Digital Asset Management (DAM)-central repository for storing, searching, versioning and
-
+1) MLR Review-manage the medical, legal and regulatory review process with workflow and approval. 
+2) Claims Management-stores and manages promotional claims, link claims to reference and
+tracks claim usage across content. 
+3)Digital Asset Management (DAM)-central repository for storing, searching, versioning and
 reusing approved digital assets such as PDFs, images, videos and presentations.
 
-4) Content Strategy (Modular Content)-Enables creation and reuse of pre-approved content modules to produce compliant content faster across multiple channels. 5) Commercial Content Kernel (CCK)-Standardizes commercial content metadata for consistent
-
-Vault Connections-Integrate PromoMats with other veeva vault applications and external system such as CRM and RIM
-
-content management and reporting. 6)
-
-Veeva Vault has different modules because different business area has different requirements etmf-electronic trial master file for storing clinical trial documents
-
+Veeva Vault has different modules because different business area has different requirements
+etmf-electronic trial master file for storing clinical trial documents
 medcomm-for medical and scientific document
+rim-regulatory information management for manages regulatory registration and submission 
+qms-qualitydocs for manages sops and quality related document.
 
-rim-regulatory information management for manages regulatory registration and submission qms,ctms,qualitydocs for manages sops and quality related document.
+3-
