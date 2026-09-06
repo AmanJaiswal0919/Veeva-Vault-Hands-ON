@@ -36,4 +36,19 @@ medcomm-for medical and scientific document
 rim-regulatory information management for manages regulatory registration and submission 
 qms-qualitydocs for manages sops and quality related document.
 
-3-
+3-What is Permission sets?
+A permission set is a collection of permission that controls what users can view,create,edit or delete.
+
+4-What is security profile?
+A security is a collection of permission that determines what action a user can perform in vault.
+Standard profile-provided by veeva like business admin
+custom profile-create by admin like business admin+crm publishing
+
+5-Difference both
+Permission sets-control access to specific objects, document and field
+security profile-control user level permission
+
+6-What is security policy?
+It is used to control user from authe
+
+6-
