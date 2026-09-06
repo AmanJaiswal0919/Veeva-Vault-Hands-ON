@@ -58,12 +58,21 @@ Sol-Just assign the Initiator with Country role permission to user
 9-RITM0501428
 Activate bulk updation feature
 this must be external user(email is not include servier)
+
+Sol-
 Agency+country+document type-reference
 Agency+country+document type-multichannel content
 group-approved email and clm group not include country user in this
 application licence-external user
 
-10-
+10-INC0904152
+User not able to see document in Approved email for central america
+
+Sol-Give user affiliate+ central america role and in group 
+clm group for eva document
+approved email for other document 
+after this user still not able to see means 
+no approved email document available in central america check apply country filter and approved email documents types filter
 
 
 
