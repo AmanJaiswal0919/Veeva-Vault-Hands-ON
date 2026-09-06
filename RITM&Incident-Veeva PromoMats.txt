@@ -72,7 +72,7 @@ Sol-Give user affiliate+ central america role and in group
 clm group for eva document
 approved email for other document 
 after this user still not able to see means 
-no approved email document available in central america check apply country filter and approved email documents types filter
+no approved email document available in central america check in library apply country filter and approved email documents types filter
 
 
 
