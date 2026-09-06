@@ -1,0 +1,119 @@
+Workflow Understanding
+
+Morocco-Omnichannel Material decode
+
+Product Manager (PM)-initiator
+
+Compliance Manager (CM)-ist approver
+
+Regulatory Affairs Director (RAD)-2nd approver
+
+I
+
+PM initiate document Draft->State Change In Approval CM
+
+-In Approval CM
+
+In Approval CM change required yes->In Approval PM->In Approval CM
+
+In Approval CM change required no->In Approval Condition
+
+-Promotional-> State Change Mockup RAD
+
+Mockup RAD change required yes->Mockup PM->Mockup RAD
+
+Mockup RAD change required no->Approved for Use
+
+-Non Promotional->In Approval RAD
+
+In Approval RAD change required yes-> In Approval PM->In Approval RAD
+
+In Approval RAD change required no->Approved for use
+
+1) Action
+
+used for State Change
+
+condition type-Always
+
+perform action-change state
+
+lifecycle state-In approval
+
+2) Task
+
+Used for assigning a task to a approver
+
+Task lable-see in workflow diagram
+
+Assign Task To-approver role
+
+Make available to users in participant group
+Instruction-msg you want to see when approver approved a document Kindly review and approve workflow task of a document: ${docName}
+
+Task requiredment-Required
+
+Due Date-Formula
+
+Workday (Today(),5)
+
+prompt for verdict
+
+Multiple Verdicts: One verdict for each item
+
+Verdict label-Approved
+
+Please add your comments.
+
+Verdict label-Changes Required
+
+Please add your comments.
+
+Notification Template-General Task Assigned-For Documents
+
+Notification Template-ObjectTaskReminderNotification
+
+Reciepients-Task Owner
+
+Send on-Task Due Date 3
+
+Notification Template-ObjectTaskReminderNotification
+
+Reciepients-Task Owner
+
+Send on-Task Due Date 1
+
+Notification Template-ObjectTaskReminderNotification
+
+Reciepients-Task Owner
+
+Send on-Task Due Date 0
+
+3) Decision
+
+Used for Condition
+
+condition type-All conditions are met
+
+If Field Type of Workflow all equals
+
+Simplified Material
+
+then State Change: In Review
+
+If Field Type of Workflow all equals
+
+then Ext COMM- State change In review
+
+External Communication
+
+ELSE
+
+then COMM: State Change: In Review
+
+4) Notification
+
+Notification Template-
+
+Recipient-RECIEVER ROLE
+

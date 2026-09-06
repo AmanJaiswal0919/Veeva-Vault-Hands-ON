@@ -1,0 +1,122 @@
+1. Remove Dependency Between Therapeutic Area Global and Therapeutic Sub Area
+
+The existing dependency between Therapeutic Area Global and Therapeutic Sub Area will be removed. This will allow users to select and manage both fields independently, providing greater flexibility in data entry and reducing dependency-related validation constraints.
+
+Go to Admin->Configuration->Field Dependency->Delete the dependency between Therapeutic Area-Global and Therapeutic SubArea
+
+2. Synchronize Product with Therapeutic Area Global and Therapeutic Sub Area for Global, GMPA, and Australia For Global, GMPA, and Australia, the selected Product will drive the automatic synchronization of both Therapeutic Area Global and Therapeutic Sub Area. This ensures consistent and accurate therapeutic area classification across these key markets while minimizing manual intervention.
+
+Go to Admin->Configuration->Field Dependency->Create new Field and Sync Product with Therapeutic Area Global and Therapeutic SubArea
+
+3. Make Therapeutic Sub Area Optional for Other Markets For all markets other than Global, GMPA, and Australia, Therapeutic Sub Area will be configured as a non-mandatory field. However, both Therapeutic Area and Therapeutic Sub Area will continue to be synchronized with the selected Product wherever applicable, ensuring data consistency while providing flexibility for local market requirements.
+
+Go to Admin->Configuration->Field Dependency->Create new Field and Sync Product with Therapeutic Area and Therapeutic SubArea Go to Admin->Configuration->Field Dependency->Add new filed Therapeutic SubArea and marked as visible
+
+
+Requirement Special-
+
+1) Restrict Email Notifications at the Workflow Level(INDIA) Problem
+
+Currently Suppose a user Aman involved in Promotional Workflow and Rahul involved in Non Promotional Workflow but both user have in same group because both have same user setup permission
+
+example
+
+Aman have application role which is Medical Reviewer India Material
+
+Rahul also have application role which is Medical Reviewer India Material
+
+so group is Medical Reviewer-Material-India
+
+so whenever any workflow run both getting notification from both workflow
+
+but acc to business logic Aman required for promotional and Rahul required for Non Promotional
+
+oso this create a major business problem because in business they will enter group not individual users
+
+Solution-
+
+we will create separate application role for both user
+
+like this for Aman Medical Reviewer-promo and for Rahul Medical Reviewer-nonpromo
+
+this approach will create separate group for both.
+
+like in Aman Case group is Medical Reviewer-promo-Material-India
+
+in Rahul case group is Medical Reviewer-nonpromo-Material-India
+
+so now Aman getting notification for Promotional Workflow and Rahul getting notification for Non-Promotional Workflow
+
+2)
+
+Therapeutic Area and Therapeutic Sub Area Enhancements
+
+Currently, there is a dependency between Therapeutic Area Global and Therapeutic Sub Area for Global, GMPA, and Australia. For other countries, such as Malaysia, the Therapeutic Area field is available but the Therapeutic Sub Area field is not available.
+
+Proposed Changes
+
+Remove Existing Dependency
+
+Eliminate the dependency between Therapeutic Area Global and Therapeutic Sub Area for:
+Global
+
+GMPA
+
+Australia
+
+This will be achieved by modifying the existing field configuration.
+
+Enable Therapeutic Sub Area for Other Countries (except global,gmpa,australia) Make the Therapeutic Sub Area field visible for other countries where it is currently not present (e.g Malaysia).
+
+The field will function independently without dependency on Therapeutic Area.
+
+Product Synchronization
+
+Ensure product synchronization supports both scenarios:
+
+Synchronize the updated Therapeutic Sub Area field for global, gmpa, australia with the Product
+
+Synchronize the newly visible Therapeutic Sub Area field for other countries with the Product.
+
+Expected Outcome
+
+Removal of the existing dependency between Therapeutic Area Global and Therapeutic Sub Area for Global, GMPA, and Australia.
+
+Availability of the Therapeutic Sub Area field for other countries (except global, gmpa,australia) Consistent synchronization of Therapeutic Sub Area data with the Product entity for both global,gmpa, australia and for other countries.
+
+3) Add values:
+
+Add the following values to the "Project" dropdown list for the 'Global' context:
+
+MY SERVIER
+
+SHAPE
+
+Sorting:
+
+Arrange the entire dropdown list in alphabetical order.
+
+4) Please update "Project" dropdown list for the 'Global' for the values below
+
+EVERY MM HG MATTERS
+
+to be added
+
+AML AWARENESS DISEASE
+to be added
+
+UNBRANDED CAMPAIGN
+
+to be added
+
+CARDIOLOGUE
+
+to be deleted
+
+DEAUVILLE CONTEST
+
+to be deleted
+
+5) The request is to modify the GMPA Workflow configuration by updating the "Therapeutic sub area" field values. A new entry, "METASTATIC UVEAL MELANOΜΑ, needs to be added to the existing list of values.
+
+6)
