@@ -49,6 +49,10 @@ Permission sets-control access to specific objects, document and field
 security profile-control user level permission
 
 6-What is security policy?
-It is used to control user from authe
+It is used to control user from authentication and password related rules to protect vault
+from unauthorized access.
+
+7-What is lifecycle?
+A lifecycle in a veeva vault defines the different states a document goes through during its life.
 
 6-
