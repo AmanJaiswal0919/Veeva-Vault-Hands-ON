@@ -57,7 +57,8 @@ A lifecycle in a veeva vault defines the different states a document goes throug
 
 6-What is workflow?
 
-A workflow is an automated process that manages review and approval and task assignment for document ensuring business process are completed efficient and compliant.
+A workflow is an automated process that manages review and approval and task assignment 
+for document ensuring business process are completed efficient and compliant.
 
 Note- Workflow is TASK based and Lifecycle is State based.
 
@@ -72,23 +73,18 @@ Workflow Steps-The sequence of tasks, decisions, actions and notification that m
 Workflow Start Step Rules-Condition that determines when a workflow is available
 
 Participants-User or Group involved in Workflow
-
 ex-Initiator
 
 Task-Activities assigned to participants that require actions
-
 ex-approve, reject
 
 Decision-control the workflow path based on participant response
 
 Action-Automated system activities
-
 ex-if approved->move to next lifecycle state, if rejected->draft
-
 ex-change lifecycle state
 
 Notification-Inform participant about assigned task
-
 ex-document ready for review
 
 End-The last step executed when we end the workflow
@@ -96,66 +92,65 @@ End-The last step executed when we end the workflow
 7-What is application role and lifecycle role?
 
 It is a logical grouping of a user with same business responsibilities it helps assign workflow task,
-
 document sharing to a group instead of individual user
-
 ex-Medical Affairs
 
-It is a document level role that define what kind of a permission a user has on the documents during each of its lifecycle state
-
+It is a document level role that define what kind of a permission a user has on the documents during 
+each of its lifecycle state
 ex-Medical Affairs-HU
 
 8-What is DAC?
 
-It a mechanism that dynamically assign lifecycle role and document access to user based on configured rules and document metadata such as country, product etc. How it works
+It a mechanism that dynamically assign lifecycle role and document access to user based on 
+configured rules and document metadata such as country, product etc. How it works
 
 First Create Application Role(Medical Affairs)
 
-Material Review and. Approval->Role->Create Lifecycle Role (Medical Affairs-HU) and attach application role to it and Enable DAC All Users and Group
+Material Review and. Approval->Role->Create Lifecycle Role (Medical Affairs-HU) 
+and attach application role to it and Enable DAC All Users and Group
 
-User Account name-TestUser, select Country as Hungary and start the workflow so sharing rule trigger found similar metadata field like country-hungary on a document with user account setup field such as country-hungary so Testuser will get all the security setting permission of Medical affairs-HU role has on that document.
+User Account name-TestUser, select Country as Hungary and start the workflow so sharing rule
+trigger found similar metadata field like country-hungary on a document with user account 
+setup field such as country-hungary so Testuser will get all the security setting permission 
+of Medical affairs-HU role has on that document.
 
 9-Explain User Action, Security Setting, Entry Criteria, Entry Actions?
 
-Security Settings-It applies on a document level what a user can do when a document in a particular lifecycle state.
-
+Security Settings-It applies on a document level what a user can do 
+when a document in a particular lifecycle state.
 ex-Draft->Lifecycle role (Initiator)=create,edit,view,delete.
 
 User Action-A action a user can do to change its current lifecycle state to a required lifecycle state.
 
 Entry Criteria-A condition must be true before a document enter in a particular lifecycle state.
-
 Draft->all required field are completed
 
 Entry Action-A action vault auto performs when a document enter in a particular lifecycle state.
-
 ex-In Review when a document enter in review auto start medical review workflow and send an email to reviewer
 
 10-What is picklists?
 
 It is predefined list of values that user can select from a field instead of typing text field
-
 -prevent spelling mistake
 
 11-DEPLOYMENT
 
-Test Environment Admin->Deployment->Outbound Package->Click Create package name & description-> Click Add component search for the workflow you made include any dependency if you have
-
-like component picklist, fields if they are not already in production save the package and click export to generate the deployment package
+Test Environment Admin->Deployment->Outbound Package->Click Create package name & description-> 
+Click Add component search for the workflow you made include any dependency if you have
+like component picklist, fields if they are not already in production save the package 
+and click export to generate the deployment package
 
 Production Environment=Admin->Deployment->Inbound Package->Click Import Package and upload
-
 the exported package->review package details resolve any dependencies issue if prompted->click deploy
-
 verify that the deployment completed successfully
 
 outbound package->in source vault, used to export configuration
-
 inbound package->in target vault, used to import configuration
 
 12-what is create domain user and why we need to check domain user before creating a user account?
 
-It i used to create a new user within a specific vault module before creating a new user we check domain user to see whether the user exist in another module within the same credential or not.
+It i used to create a new user within a specific vault module before creating a new user we check 
+domain user to see whether the user exist in another module within the same credential or not.
 
 13- what is mir workflow?
 
@@ -166,9 +161,7 @@ A workflow involving medical, legal and regulatory reviewers to approve the prom
 It determines the level of access and fuctionality a user have within a vault
 
 full user-create, edit, view participate in workflow
-
 read-only user-only view and cannot participate in workflow
-
 external user-for agencies, vendors, partner limited access to assigned documents and tasks
 
 15-which field mandatory to fill during user creation?
