@@ -37,60 +37,47 @@ rim-regulatory information management for manages regulatory registration and su
 qms-qualitydocs for manages sops and quality related document.
 
 3-What is Permission sets?
-A permission set is a collection of permission that controls what users can view,create,edit or delete.
+A permission set is a collection of permission that provide a object level permission to user.
+ex-user can view, edit, delete a particular document.
 
 4-What is security profile?
-A security is a collection of permission that determines what action a user can perform in vault.
+A security profile provide a system level access to user define what action a user can do in vault.
 Standard profile-provided by veeva like business admin
 custom profile-create by admin like business admin+crm publishing
 
-5-Difference both
-Permission sets-control access to specific objects, document and field
-security profile-control user level permission
-
-6-What is security policy?
+5-What is security policy?
 It is used to control user from authentication and password related rules to protect vault
 from unauthorized access.
+SSO Basic- required email and password to login
+SSO Azure- required only email to login
 
-7-What is lifecycle?
-A lifecycle in a veeva vault defines the different states a document goes through during its life.
+6-What is lifecycle?
+A lifecycle defines that what are the different-2 states a document goes through during its life.
+ex Material and Review Lifecycle-document lifecycle
 
-6-What is workflow?
-
-A workflow is an automated process that manages review and approval and task assignment 
-for document ensuring business process are completed efficient and compliant.
-
+7-What is workflow?
+A workflow is an automated business process that manages review and approval task assignment 
+for a document ensuring business process are completed efficient and compliant.
 Note- Workflow is TASK based and Lifecycle is State based.
 
 Main component of workflow
-
 Start-The first step executed when we create the workflow
-
 Control-Collect the information when the workflow starts.
-
 Workflow Steps-The sequence of tasks, decisions, actions and notification that make up the workflow
-
 Workflow Start Step Rules-Condition that determines when a workflow is available
-
 Participants-User or Group involved in Workflow
 ex-Initiator
-
 Task-Activities assigned to participants that require actions
 ex-approve, reject
-
 Decision-control the workflow path based on participant response
-
 Action-Automated system activities
 ex-if approved->move to next lifecycle state, if rejected->draft
 ex-change lifecycle state
-
 Notification-Inform participant about assigned task
 ex-document ready for review
-
 End-The last step executed when we end the workflow
 
 7-What is application role and lifecycle role?
-
 It is a logical grouping of a user with same business responsibilities it helps assign workflow task,
 document sharing to a group instead of individual user
 ex-Medical Affairs
@@ -100,13 +87,11 @@ each of its lifecycle state
 ex-Medical Affairs-HU
 
 8-What is DAC?
-
 It a mechanism that dynamically assign lifecycle role and document access to user based on 
 configured rules and document metadata such as country, product etc. How it works
 
 First Create Application Role(Medical Affairs)
-
-Material Review and. Approval->Role->Create Lifecycle Role (Medical Affairs-HU) 
+Material Review and Approval->Role->Create Lifecycle Role (Medical Affairs-HU) 
 and attach application role to it and Enable DAC All Users and Group
 
 User Account name-TestUser, select Country as Hungary and start the workflow so sharing rule
@@ -115,55 +100,49 @@ setup field such as country-hungary so Testuser will get all the security settin
 of Medical affairs-HU role has on that document.
 
 9-Explain User Action, Security Setting, Entry Criteria, Entry Actions?
-
 Security Settings-It applies on a document level what a user can do 
 when a document in a particular lifecycle state.
 ex-Draft->Lifecycle role (Initiator)=create,edit,view,delete.
-
 User Action-A action a user can do to change its current lifecycle state to a required lifecycle state.
-
+ex-add workflow in a start workflow start button
 Entry Criteria-A condition must be true before a document enter in a particular lifecycle state.
-Draft->all required field are completed
-
+ex-Draft->all required field are completed
 Entry Action-A action vault auto performs when a document enter in a particular lifecycle state.
 ex-In Review when a document enter in review auto start medical review workflow and send an email to reviewer
 
 10-What is picklists?
-
 It is predefined list of values that user can select from a field instead of typing text field
 -prevent spelling mistake
 
 11-DEPLOYMENT
-
 Test Environment Admin->Deployment->Outbound Package->Click Create package name & description-> 
 Click Add component search for the workflow you made include any dependency if you have
 like component picklist, fields if they are not already in production save the package 
 and click export to generate the deployment package
-
 Production Environment=Admin->Deployment->Inbound Package->Click Import Package and upload
 the exported package->review package details resolve any dependencies issue if prompted->click deploy
 verify that the deployment completed successfully
-
 outbound package->in source vault, used to export configuration
 inbound package->in target vault, used to import configuration
 
 12-what is create domain user and why we need to check domain user before creating a user account?
-
-It i used to create a new user within a specific vault module before creating a new user we check 
+It used to create a new user within a specific vault module before creating a new user we check 
 domain user to see whether the user exist in another module within the same credential or not.
 
-13- what is mir workflow?
-
+13- what is mlr workflow?
 A workflow involving medical, legal and regulatory reviewers to approve the promotional content.
 
 14-what is application licensing or licence type?
-
 It determines the level of access and fuctionality a user have within a vault
-
 full user-create, edit, view participate in workflow
 read-only user-only view and cannot participate in workflow
 external user-for agencies, vendors, partner limited access to assigned documents and tasks
 
 15-which field mandatory to fill during user creation?
-
 firstname, lastname, username, email, language, local, timezone, security profile
+
+16-What is Approved Email?
+17-What is Report?
+18-What is Dashboard?
+19-What is bulk action
+20-What is Vault loader? difference between loader vs bulk action?
