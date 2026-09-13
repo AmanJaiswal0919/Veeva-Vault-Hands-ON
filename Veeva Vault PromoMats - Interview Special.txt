@@ -142,7 +142,28 @@ external user-for agencies, vendors, partner limited access to assigned document
 firstname, lastname, username, email, language, local, timezone, security profile
 
 16-What is Approved Email?
+Approved Email is a feature used to manage and approve email content that will be sent to HCP.
+First CRM team create the email content  which is managed through Promomats and goes through a approval process
+(mlr workflow) then approved content is made available to CRM system then CRM user sends that approved email to HCP.
+Email Template-the complete email structure header+footer+body+logo
+Email Fragment-product disclaimer, safety information.
+Template Fragment- a standard(particular) header or footer
+
 17-What is Report?
+A report is used to retrieve and display data specific vault data in a structured way
+ex-document expiring in next 30 days
+the report list those documents with their names, owners and expiry dates.
+
 18-What is Dashboard?
+A Dashboard is a visual representation of important data usually using multiple reports, charts,metrics and other components.
+ex-promomats dashboard
+document by lifecycle state
+document approved this month
+document expiring soon
+active workflow
+
 19-What is bulk action
+ex-you have 1000 documents in Draft want to move to the next lifecycle state(in review)
+
 20-What is Vault loader? difference between loader vs bulk action?
+you have to update/load a user account metadata field through a csv file
