@@ -1,1 +1,27 @@
-Veeva
+Scenario-1 you have to add Metal value in Therapeutic Area Field?
+Sol- Goto Business admin->Picklist tab->Open Therapeutic Area Field->click Create Metal 
+Note-at the time of creation you also have to see in which document types 
+this field is available only in those document type this field and its value
+ Metal is visible like only in Material,Reference document
+
+Scenario-2 you have to add Metal value in Therapeutic Area Field for country India?
+Sol-Goto Business admin->Picklist tab->Open Therapeutic Area Field->click Create Metal 
+Note-at the time of creation you also have to see in which document types 
+this field is available only in those document type this field and its value
+ Metal is visible like only in Material,Reference document
+then Go to field dependencies->export excel->search for type of workflow field for India
+add this Metal value into it
+Note-you have to add for both document types Material and Reference document
+best way to search by existing value you can find through placeholder creation
+Note-if your value is dependent on other field - scenario 2 if not - scenario 1
+
+Scenario-3 How to make Therapeutic Area field visible for other country now its just showing for Country 
+Global?
+Sol-Go to field dependency->export excel->search Therapeutic Area for global open it->
+now you will see Therapeutic Area is required means its visible for global
+Go to field dependency->Create->Controlled by document field
+Type-Material, Field-Country Search France is not available because for france it is already 
+created means for France this field is visble so choose another Australia
+Now create placeholder you will see this field for Australia as well
+Here you dont create the field you just create the condition for already created field
+in which different-2 its need to be visible.
