@@ -78,8 +78,13 @@ and approved email documents types filter
 11-RITM0501437
 12-RITM0502287
 13-INC0925568
-14-INC0706224
-15-
+14-INC0706224 (which role allow you to binder option this will also add in solution)
+15-INC0928215
+16-RITM0514032
+17-RITM0516269
+18-INC0933494
+19-vdi slow incident raise
+20-sc not assigned incident raise
 
 
 
