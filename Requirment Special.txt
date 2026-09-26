@@ -93,8 +93,8 @@ Uske liye library mein gaye filter country global and document type material gmp
 15-20 document open kiye tho sbse jyada therapeutic subarea use ho raha tha naa ki su therapeutic area tho issi mein add kiya
 
 6) 4677-Japan(August)
-Business->Picklist->Type of Workflow->Create picklist value "GMPA-Japan Review(Sevasemten)"
-Business->object->Application role->create new application role
+Business Admin->Picklist->Type of Workflow->Create picklist value "GMPA-Japan Review(Sevasemten)"
+Business Admin->object->Application role->create new application role
 Admin->Configuration->Document Lifecycle->Material GMPA->Role->Create new lifecycle role
 GMPA Workflow Roles         Lifecycle Role                    Application Role
 Initiator GMPA              Initiator GMPA-Japan               Initiator GMPA-Japan
@@ -110,4 +110,15 @@ Admin->Configuration->Field dependency->search Material GMPA->add value "GMPA-Ja
 
 
 7)4731-SouthKorea(August)
+Business Admin->Application role->create new application role Medical Lead Ltd
+Admin->Configuration->Document Lifecycle->Material Review & Approval->Roles->
+Create new lifecycle role "Medical Lead Ltd"
+Admin->Configuration->Document Lifecycle->Material Review & Approval->Roles->
+Medical Lead Ltd->Sharing Rule
+Admin->Configuration->Document Lifecycle->Material Review & Approval->State->
+Draft, In Review, In Approval, Approved for Use, Superseded, Expired, Withdrawn->
+Security Setting->provide based on data collection for Medical Lead
+Admin->Configuration->Workflows->Korea Workflow Prom and Non Prom->update workflow
+Korea-Non Promotional as per visio
 
+8)
