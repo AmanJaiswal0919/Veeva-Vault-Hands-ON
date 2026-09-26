@@ -121,7 +121,7 @@ Security Setting->provide based on data collection for Medical Lead
 Admin->Configuration->Workflows->Korea Workflow Prom and Non Prom->update workflow
 Korea-Non Promotional as per visio
 
-8) 4670-US release
+8) 4670-US release(august)
 1-Re-label Shared Document field "Therapeutic Area":
 Update Label to "Therapeutic Area - US"
 
@@ -160,3 +160,5 @@ add DAY301,Ojemda these two in product picklist
 for Multichannel Presentation, Multichannel Slide, Email Fragment, Email Template,
 
 ques- find out the reason why two different field dependency like 1 and 2 to yash
+
+9) 3305-cluster (july)
