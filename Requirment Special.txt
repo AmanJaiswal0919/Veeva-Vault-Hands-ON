@@ -121,4 +121,42 @@ Security Setting->provide based on data collection for Medical Lead
 Admin->Configuration->Workflows->Korea Workflow Prom and Non Prom->update workflow
 Korea-Non Promotional as per visio
 
-8)
+8) 4670-US release
+1-Re-label Shared Document field "Therapeutic Area":
+Update Label to "Therapeutic Area - US"
+
+2 Create New "Therapeutic Area - US" picklist value:
+Picklist Value Label: "Neurology"
+
+3 Create New Product:
+
+Product Name = Ojenda
+Global Name = Ojemda
+INN = Tovorafenib
+Therapeutic Area = Oncology
+
+4Create New Product:
+
+Product Name = DAY301
+Global Name = DAY301
+INN = DAY301
+Therapeutic Area = Oncology
+
+SUpdate Field Dependency Rule for Commercial Material - US, Concept Material - US, Market Access Material - US, Medical Material - US, Multichannel Presentation, Multichannel Slide, Patient office Material-US, Email Fragment, Email Template
+DAY301
+Ojemda
+
+1) Field dependencies->create select controlled by field
+document type-as per required
+field-country
+after select united states
+add DAY301,Oiemda these two in product picklist
+for Commercial Material - US, Concept Material - US, Market Access Material - US, Medical Material - US, Patient office
+Material-US
+
+2) Field dependencies->create select controlled by document type
+document type-as per required
+add DAY301,Ojemda these two in product picklist
+for Multichannel Presentation, Multichannel Slide, Email Fragment, Email Template,
+
+ques- find out the reason why two different field dependency like 1 and 2 to yash
