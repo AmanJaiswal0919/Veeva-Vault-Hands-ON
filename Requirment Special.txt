@@ -109,5 +109,5 @@ Admin->Configuration->Field dependency->search Material GMPA->add product "Sevas
 Admin->Configuration->Field dependency->search Material GMPA->add value "GMPA-Japan Review(Sevasemten)" in Type of Workflow picklist
 
 
-7)
+7)4731-SouthKorea(August)
 
