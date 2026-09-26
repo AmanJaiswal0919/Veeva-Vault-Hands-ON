@@ -75,6 +75,58 @@ after this user still not able to see means
 no approved email document available in central america check in library apply country filter 
 and approved email documents types filter
 
+RITM0501437-Could you please give the API name if these following fields:
+
+BINDER fields:
+State/province
+REGION
+Business Unit
+
+SLIDES fields
+State/province
+Key Message
+Detail Group
+
+Sol-Binder means multichannel presentation and slides means multichannel slides
+Go to Admin->Configuration->Document Fields->look for these for Multichannel Presentation and slides only write down their api values:
+
+BINDER Fields
+State/Province-> srv_stateprovence_c
+REGION-> region_c
+Business Unit-> business_unit_c
+
+SLIDES Fields
+State/Province-> srv_stateprovence_c
+Key Message-> key_message_v
+Detail Group-> detail_group_v
+
+RITM0502287- Could you apply permission to the users rocio.celdranquecedo to can see all Approved Emails and be able to update the status from 'Staged' to 'Approved'.
+
+Sol-add affiliate, approved email and clm group remove material in document type
+
+INC0925568-the fix could you please reclassify the version 2.1 similar to 2.0
+
+Sol-open the document just click on reclassify Reclassified to document type Multichannel slide to material subtype visual aid lifecycle also changed after reclassification document number also changed
+
+INC0706224-binder option is not available
+
+sol-user is not aware about it just click on document not placeholder you will se binder All->Create->click Document not placeholder you will see if not give user to approved email and clm group
+
+INC0928215-Not achieve to add or to create a document relationship(bulk action problem in approved state.)
+
+sol-binder create-> edit binder->add->existing document->click 3 dots->all document->next->create document
+relationship->select document->next->finish
+We have checked and confirmed that the documents for which you are trying to add a document relationship are currently in the Approved state. As configured, users do not have permission to add document relationships when Multichannel Slide document is in the Approved state. That's why you are getting that error message.
+As it is not an issue, could you please confirm the closure? If you still want to add the document, kindly raise an RITM request by clicking the given link so we can do on your behalf.
+
+RITM0514032-France users and agency France for multichannel document view RITM0516269-reassign user for product manager role
+
+INC0933494-3strike policy mein pending mein hi karni hai
+
+RITM0518852-change owner for multiple document through reports
+
+Sol-Report->create->Document->continue
+two filter owner and created by and adjust column as per given sheet then run report click 3 dots all document->next->select action change owner->give owner name->next
 11-RITM0501437
 12-RITM0502287
 13-INC0925568
