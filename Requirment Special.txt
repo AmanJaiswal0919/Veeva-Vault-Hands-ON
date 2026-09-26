@@ -92,4 +92,22 @@ Konsi field mein add karna hai
 Uske liye library mein gaye filter country global and document type material gmpa
 15-20 document open kiye tho sbse jyada therapeutic subarea use ho raha tha naa ki su therapeutic area tho issi mein add kiya
 
-6)
+6) 4677-Japan(August)
+Business->Picklist->Type of Workflow->Create picklist value "GMPA-Japan Review(Sevasemten)"
+Business->object->Application role->create new application role
+Admin->Configuration->Document Lifecycle->Material GMPA->Role->Create new lifecycle role
+GMPA Workflow Roles         Lifecycle Role                    Application Role
+Initiator GMPA              Initiator GMPA-Japan               Initiator GMPA-Japan
+Medical Manager             Medical Manager-GMPA-Japan         Medical Manager-GMPA-Japan
+Medical Affairs Head        Medical Affairs Head-GMPA-Japan    Medical Affairs Head-GMPA-Japan
+Sharing Rule and Security Setting
+doubt ask yash - how we give sharing rule and security setting for new role if its parent role doesnot exist.
+Admin->Configuration->Workflow->Create GMPA-Japan Review(Sevasemten)
+Admin->Configuration->GMPA Lifecycle->states->Draft->user action add "GMPA-Japan Review(Sevasemten)" in
+Type of workflow condition for Material GMPA.
+Admin->Configuration->Field dependency->search Material GMPA->add product "Sevasemten" in product picklist
+Admin->Configuration->Field dependency->search Material GMPA->add value "GMPA-Japan Review(Sevasemten)" in Type of Workflow picklist
+
+
+7)
+
