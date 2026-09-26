@@ -162,3 +162,19 @@ for Multichannel Presentation, Multichannel Slide, Email Fragment, Email Templat
 ques- find out the reason why two different field dependency like 1 and 2 to yash
 
 9) 3305-cluster (july)
+
+Goto Business->object-> countries ->Create the cluster country -> "Adriatic".
+Go to Business Admin-> object->countries->Update below countries Inactive: Albania, Bosnia and Herzegovina, Croatia, Montenegro, Serbia, Slovenia
+Go to Business Admin->object->state/province-> create below state/province: Albania, Bosnia and Herzegovina, Croatia, Montenegro, Serbia, Slovenia
+Go to Admin->Configuration->Field dependency->search for country "Croatia" and Document Type as "Multichannel Presentation"->add the country "Adriatic" and remove Croatia
+Go to Admin->Configuration->Field dependency->search for country "Croatia" and Document Type as "Multichannel Slide"->add the country "Adriatic" and remove Croatia
+Go to Admin->Configuration->Field dependency->search for country "Albania" and Document Type as "Material"->add the country "Adriatic" and remove albania, Croatia
+Go to Admin->Configuration->Field dependency->search for country "Albania" and Document Type as "Digital Material"->add the country "Adriatic" and remove albania, Bosnia and Herzegovina, Croatia
+Go to Admin->Configuration->Field dependency->search for country "Albania" and Document Type as "Reference document"->add the country "Adriatic" and remove Albania, Bosnia and Herzegovina, Croatia, Montenegro, Serbia, Slovenia.
+Go to Admin->Configuration->Field dependency ->search for country "Albania" and Document Type as "Material"->add the country "Adriatic" and remove Albania, Bosnia and Herzegovina, Croatia, Montenegro, Serbia, Slovenia and remove the state/province field dependency from this
+Go to Admin->Configuration->Document Lifecycles>Material Review and Approval>States>Draft> User Action > update country as Adriatic
+Go to Admin->Configuration->Document Lifecycles>Material Review and Approval>States>Approved for use>User Action > update country as Adriatic
+Go to Admin->Configuration->Document Lifecycles>Material Review and Approval>States>Approved for use> Entry Action> remove albania, Bosnia and Herzegovina Montenegro, serbia
+Go to Admin->Configuration->Document Lifecycles>Material Review and Approval>States>Approved for use> Entry Action> update country as Adriatic 15. Go to Admin->Configuration->Document Lifecycles>Material Review and Approval>States>Withdrawn> Entry Action> update country as Adriatic 16.Go to -> Admin -> Configuration -> Document lifecycles -> Approved Email -> States -> Approved -> Entry Criteria-> Add Adriatic country and remove country - Bosnia and Herzagovina, Serbia, Slovenia, Albania
+Go to -> Admin -> Configuration -> Document lifecycles -> Binder Lifecycle -> States -> Approved -> Entry Criteria-> Add Adriatic country and remove country - Bosnia and Herzagovina, Serbia, Slovenia, Albania, Croatia
+Go to -> Admin -> Configuration -> Document workflow-> Adriatic workflow 1-> Decision->Drug Agency Validation(For RS) ->update as based on state/province instead of country
