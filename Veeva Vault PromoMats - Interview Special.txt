@@ -203,3 +203,11 @@ and Guide like-user guide,module guide,admin guide
 Techinal documentation like TDD,CR
 
 23-UAT Process and when you raised a Jira?
+
+24-Difference between Picklist vs Field vs Object?
+Object- What are we managing
+An object represent a business entity or record in Vault
+Field- What information do we capture
+A Field defines a specific piece of information that needs to be captured for an object
+Picklist- what value can the user select
+A Picklist provides a predefined set of values that can be selected for a field
