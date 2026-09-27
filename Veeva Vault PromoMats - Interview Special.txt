@@ -167,6 +167,15 @@ ex-you have 1000 documents in Draft want to move to the next lifecycle state(in 
 
 20-What is Vault loader? difference between loader vs bulk action?
 you have to update/load a user account metadata field through a csv file
+It is an important Veeva Vault capability used to efficient load,update and export data 
+in bulk rather than entering records manually.
+Manually entry would be Time-Consuming, Repetitive, Prone to human errors
+Process
+Extract data from source(Source Data)->Map source field to vault field(Data mapping)->Clean and validate data(Validation)->
+prepare CSV(CSV Preparation)->load data using vault loader(Data Load)->compare data for data consistency of 
+source vs target data(Reconciliation)->Perform post load verification(Verification)
+Bulk action- It is a functionality provided by vault that can allow authorized user to update multiple
+records efficiently.
 
 21-Explain End to End a Business Requirement?
 India wali Recuirement Devanshi wal
