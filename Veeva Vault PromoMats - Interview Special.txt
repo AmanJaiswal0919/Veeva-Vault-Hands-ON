@@ -142,7 +142,7 @@ external user-for agencies, vendors, partner limited access to assigned document
 firstname, lastname, username, email, language, local, timezone, security profile
 
 16-What is Approved Email?
-Approved Email is a feature used to manage and approve email content that will be sent to HCP.
+Approved Email is a feature used to manage and approve email content that will be sent to HCP(Health Care Professional).
 First CRM team create the email content  which is managed through Promomats and goes through a approval process
 (mlr workflow) then approved content is made available to CRM system then CRM user sends that approved email to HCP.
 Email Template-the complete email structure header+footer+body+logo
@@ -167,3 +167,11 @@ ex-you have 1000 documents in Draft want to move to the next lifecycle state(in 
 
 20-What is Vault loader? difference between loader vs bulk action?
 you have to update/load a user account metadata field through a csv file
+
+21-Explain End to End a Business Requirement?
+India wali Recuirement Devanshi wali
+
+22-Explain a Go-Live Recuirment ?
+you made IndiaWorkflowTestUser rename it Panama Workflow.
+
+23-UAT Process and when you raised a Jira?
