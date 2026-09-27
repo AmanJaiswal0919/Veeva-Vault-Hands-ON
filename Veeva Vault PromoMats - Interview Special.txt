@@ -211,3 +211,19 @@ Field- What information do we capture
 A Field defines a specific piece of information that needs to be captured for an object
 Picklist- what value can the user select
 A Picklist provides a predefined set of values that can be selected for a field
+
+25- What is Promotion Type and Document Types?
+Promotion Type- It is a document metadata field used to categorize a document based on its use.
+Promotional Document- to promote a pharma product to a pharma audiense such as hcp
+ex-Advertisement, Brochure etc.
+Non Promotional-
+ex-
+Document Types- It is used to classify a document based on its classification we can 
+define associated metadata, lifecycle, workflow and security setting for a document.
+ex-Material, Material GMPA, Multichannel Slides, Multichannel Presentation, Reference Document etc.
+
+26-what is Vault api name for metadata field?
+The Vault API name is unique technical name of a metadata field.Its different from the user facing
+field label name It is used in API request to read and update the field we can find the api name 
+for a metadata field from a  configuration document field in admin.
+Like Promotion Type-> promotion_type__v, Type of Workflow->
