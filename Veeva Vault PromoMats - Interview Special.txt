@@ -169,9 +169,28 @@ ex-you have 1000 documents in Draft want to move to the next lifecycle state(in 
 you have to update/load a user account metadata field through a csv file
 
 21-Explain End to End a Business Requirement?
-India wali Recuirement Devanshi wali
+India wali Recuirement Devanshi wal
 
 22-Explain a Go-Live Recuirment ?
-you made IndiaWorkflowTestUser rename it Panama Workflow.
+Business Requirement-We needed to configure a document review workflow with two paths
+based on promotion type-Promotional and non Promotional
+Acc to Visio
+in which path-1 follow when a initiator initiate a document and start the workflow 
+based on promotion type if its promotional then it will follow path-1 if its non promotional
+it will follow path-2
+In path-1 It comes in Review state where it find Medical Affairs Reviewer based on his decision if approve then it will
+go to In approval state for head compliance approval else come back to initiator
+In path-2 It comes in Review state where it find Regulatory Affairs Reviewer based on his decision if approve then it will
+go to In approval state for head compliance approval else come back to initiator
+after this based on Head compliance decision if he approve then it will be approved for use state else come back to initiator
+where initiator need to initiate a document again.
+sol-
+first we create application and lifecyle role and add a picklist panama-promandnonprom value in 
+type of workflow field for panama market
+and give lifecycle role sharing rule and security setting acc to data collection
+and a condition in user action for panama-promandnonprom picklist value
+create a script and evidence like unit testing,system testing
+and Guide like-user guide,module guide,admin guide
+Techinal documentation like TDD,CR
 
 23-UAT Process and when you raised a Jira?
