@@ -203,6 +203,17 @@ and Guide like-user guide,module guide,admin guide
 Techinal documentation like TDD,CR
 
 23-UAT Process and when you raised a Jira?
+When a new requirement came you can see that requirement in Analyse TMA tab 
+after that you have 3 days to provide analyse but best practice is do in 2days
+if a case come like you dont exactly about the requirement you can take poc points 
+to check the feasibility after poc you will have to take estimated effort points if its feasible
+then click on analyse done then the requirement will come Estimated after this alain
+move the reuirement estimated to refinement state then change to Go Dev State by clicking
+To Dev in progress start deployment in sandbox make script evidence
+then sent a uat mail to user paste that mail to in requirement wait for user uat
+confirmation after confirmation paste that confirmation mail to in requirement
+send a mail to Manon then Manon will change to it in Ready for Dev by clicking ready for prod
+In production after deployment we change to Dileverd in Prod by clicking Deliverd Prod 
 
 24-Difference between Picklist vs Field vs Object?
 Object- What are we managing
