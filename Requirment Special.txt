@@ -293,3 +293,41 @@ f. Slovenia
 6. Update the configuration for Material lifecycle for merging with Adriatic and also check and update the configuration of other document type.
 7. All the data for above merging ountry should be updated in Veeva Vault Promomats so that no issue occur in Lynx CRM system
 
+3512
+
+2.Go to Business->Picklist -> Type of workflow ->Create the picklist value-> "External Communication Panama".
+3. Go to Admin-> Configuration->Workflows ->Update/add the "External Communication" workflow in the Marged workflow "PANAMA- Simplified/Internal/External WF1" as per the new Visio and specification.
+4. Go to Admin->Configuration->Material review and life cycle ->states-> Draft -> user action -> Add value "External Communication Panama" in the "Type of workflow" condition for Panama as mentioned in below screenshot.
+5. Go to Admin->Configuration->Field dependency ->search for country "Panama" and Document Type as "Material"-> add the value "External Communication Panama" in the picklist value of "Types of workflows".
+
+3503
+2. Goto Business->Picklist -> Type of workflow ->Update the picklist value-> "Communication Workflow" to "Internal Communication" and "Translation Material" to "Simplified Material".
+3.Go to Business admin->objects ->Application role-> Create new application role as mentioned in above table and save it.
+Workflow Roles
+Regulatory Affairs Servier
+Medical Affairs Servier
+Product Manager Servier
+Lifecycle Roles
+Regulatory Affairs Servier-PA
+Medical Affairs Servier-PA
+Product Manager Servier-PA
+Application Roles
+Regulatory Affairs Servier
+Medical Affairs Servier
+Product Manager Servier
+
+4.Go to Admin->Configuration->Material review and life cycle > role-> Create new Lifecycle role as mentioned in above table and save it
+
+5.Go to Admin->Configuration->Material review and life cycle role-> Go to the Lifecycle role mentioned in above table-> Sharing rule-> Create sharing rules in each role:
+a) Create rule for Country
+b) Create rule for Country and Document type Group
+
+6.Go to Admin-> Configuration->Workflows ->Update the workflows (PANAMA-Event & Medical Workflows, PANAMA- Simplified/Internal/External WF, PANAMA-Prom/Non-Prom Material) as per the new Visio and specification.
+
+7.Go to Admin->Configuration->Material review and life cycle ->states-> Draft -> user action -> Update the user action for Panama as mentioned in below screenshot.
+
+8.Go to Admin->Configuration->Material review and life cycle ->states->Update the security permission as per the data collection.
+
+9.Go to Admin->Configuration->Field dependency ->search for country "Panama" and Document Type as "Material"-> check the field dependencies are updated after updation of picklist values of "Types of workflow"
+1. "Communication Workflow" to "Internal Communication"
+2. "Translation Material" to "Simplified Material"
