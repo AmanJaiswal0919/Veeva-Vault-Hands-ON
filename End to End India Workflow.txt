@@ -214,3 +214,129 @@ then
 Initiator Name will be India-Initiator AI, Aman Test1
 Regulatory Reviewer Name will be COVERSYL-India-Material-Non Promotional-Regulatory Reviewer AI, Yash Test2
 Head Compliance Name will be COVERSYL-India-Material-Head Compliance AI, Rahul Test4
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+How to make a simple workflow
+
+Admin->Configuration->Workflow->Click on Create then Select the Document Workflow
+
+In Detail Section
+Give the Label, Name and Select the required document lifecycle (Material Review and Approval)
+In Options Section
+tick these two Use workflow for single document, Workflow cancellation comment then go to Workflow Steps
+Click on Start Workflow
+
+In Start
+Define Next Step
+Add Controls Instruction and Participants
+Instruction-Write Something you want to see when user start the workflow
+by clicking Start Workflow Button
+Participants-Give Participant Label, select Allow workflow initiator to select the participants 
+and Choose Role allowed to participate choose and tick these two
+Allow task instructions for these participants,
+Default users from sharing settings
+Participant Label user will see this name in Start Dialog box after start the workflow
+by clicking Start Workflow Button Role allowed to participate-choose here required lifecycle role
+Allow task instructions for these participants-need to investigate
+Default users from sharing settings-need to investigate
+Display users and groups allowed in role-need to investigate
+
+Step Rules
+define rule label, rule type, Control
+rule label-name of rule Hidden for Path-1
+rule type-required or hidden
+control-which Participant or Instruction you want to hidden when user start 
+the workflow by clicking Start Workflow Button
+Hidden for Path-1, Hidden, Regulaorty Reviewer Name, Instruction Control 2 means 
+when Path-1 workflow start when user start the workflow by clicking Start Workflow Button 
+participant-regulatory reviewer Name and Instruction Control 2: Instructions will be hidden
+
+then In Next Step
+Choose between Decision, Action, Task, Notification
+
+1-In Decision
+Type-Decision
+Define Next Step
+Go to Rules
+
+Create Condition
+Type-All conditions are met
+If
+Field Type of Workflow all equals Path1
+then Required Step
+Else
+then Required Step
+If Field(use here), need to find out-Job, Task here
+
+2-In Decision
+Type-Decision
+Define Next Step
+Go to Rules
+
+Create Condition
+Type-All conditions are met
+If
+Field Type of Workflow all equals Path1
+then Required Step
+Else
+then Required Step
+If Field(use here), need to find out-Job, Task here
+
+2-In Action
+Type-Action
+Define Next Step
+Go to Rules
+Create Condition
+Type-Always
+Change item to lifecycle state In Review
+perform action-Change State
+Lifecycle state-Required lifecycle state
+
+3-In Task
+Type-Task
+Define Next Step
+Task Label-Task owner will see this Name
+Assigned Task to-Participant Label Name
+Assign to all users in participant group-means in Start Dialog box available option (Assigned to every user) 
+Make available to users in participant group-means in Start Dialog box available option (Assigned to any user)
+Allow workflow initiator to select assign to all or make available-means in Start Dialog box
+available option (Both Assigned to every user/Assigned to any user)
+Every User Means-assign task to All eligible user
+Any User-assign task to any eligible user
+How to eligible
+if a workflow role is Medical Reviewer A-have B-have C-not have
+A,B is eligible and C is not eligible
+Every User case both A, B receive task.
+Any User case-between A, B any one of them receive task
+Instruction-Task owner will see this instruction
+Task Requirement-Required
+Due Date-Formula (put formula for current task assigned date)
+tick Prompt for Verdicts
+tick Multiple Verdicts: One verdict for each item
+Verdict Label-Approved, Change Required
+Notification Template-General Task Assigned-For Documents
+Task Reminders
+Notification Template-ObjectTaskReminderNotification
+Recipients-Task Owner
+Send on-Task Due Date +/- Days (task assigned date +/- Days ex 19 October 2026 task assigned 
+to that user if you +2 here they will get reminder on 21 October 2026)
+
+In Notification
+Type-Notification
+Define-Next Step
+Notification Template-Base approved, Base approved for use
+Receipeints-lifecycle role(Task Owner)/Workflow Owner
+Base approve when you put notification after workflow task is completed(generally for Task Owner)
+Base approved for use-when you put notification after all workflow task is completed(generally for Workflow Owner)
+note- workflow owner not always a initiator suppose in starting A is initiator and workflow owner
+suppose A left company workflow owner change A to B
+but that document is already in mid way of its lifecycle
+if its approved-then we dont need to change initiator
+if its rejected in any stage we need to change A to B for reinitiate.
+
+In End
+Type-End
+Define-Next Step (End)
+End Type-Select End workflow
