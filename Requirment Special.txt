@@ -294,6 +294,10 @@ f. Slovenia
 7. All the data for above merging ountry should be updated in Veeva Vault Promomats so that no issue occur in Lynx CRM system
 
 3512
+Actual Business Requirement
+[Panama] New Workflow 'External Communication'-3512
+Could you please implement this new Workflow for External Communication.
+This workflow is nearly the same as 'Internal Communication Workflow' but without the 'HR Director' role.
 
 2.Go to Business->Picklist -> Type of workflow ->Create the picklist value-> "External Communication Panama".
 3. Go to Admin-> Configuration->Workflows ->Update/add the "External Communication" workflow in the Marged workflow "PANAMA- Simplified/Internal/External WF1" as per the new Visio and specification.
@@ -301,6 +305,26 @@ f. Slovenia
 5. Go to Admin->Configuration->Field dependency ->search for country "Panama" and Document Type as "Material"-> add the value "External Communication Panama" in the picklist value of "Types of workflows".
 
 3503
+Actual Business Requirements
+PANAMA] - Modifications on existing workflows-3503
+Could you please apply the modifications bellow on Panama's workflows.
+Worklfow Promo/Non Promotional Material
+If Training' is selected, only choose Servier employees.
+In other cases ('Slide Set' & 'Other'), the role will be "Agency" + 'Servier'.
+Worklfow Event Material
+For Event Material only choose Servier employees.
+Workifow Medical Department material
+No changes vs Production
+Worklfow Translation
+Rename in "Simplified material"
+If 'Slide Set' is selected, only choose Medical Affairs Servier.
+In other cases ('Training' & 'Other'), only choose Regulatory Affairs Servier
+Workifow Promo/NON-PROMOTIONAL Material for Trade & Market Access
+Deactivate this Workflow
+Worklfow Communication
+Rename in "Internal Communication"
+
+
 2. Goto Business->Picklist -> Type of workflow ->Update the picklist value-> "Communication Workflow" to "Internal Communication" and "Translation Material" to "Simplified Material".
 3.Go to Business admin->objects ->Application role-> Create new application role as mentioned in above table and save it.
 Workflow Roles
