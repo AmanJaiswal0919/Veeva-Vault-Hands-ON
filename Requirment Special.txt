@@ -1,22 +1,18 @@
 1. Remove Dependency Between Therapeutic Area Global and Therapeutic Sub Area
 
 The existing dependency between Therapeutic Area Global and Therapeutic Sub Area will be removed. This will allow users to select and manage both fields independently, providing greater flexibility in data entry and reducing dependency-related validation constraints.
-
 Go to Admin->Configuration->Field Dependency->Delete the dependency between Therapeutic Area-Global and Therapeutic SubArea
 
 2. Synchronize Product with Therapeutic Area Global and Therapeutic Sub Area for Global, GMPA, and Australia For Global, GMPA, and Australia, the selected Product will drive the automatic synchronization of both Therapeutic Area Global and Therapeutic Sub Area. This ensures consistent and accurate therapeutic area classification across these key markets while minimizing manual intervention.
-
 Go to Admin->Configuration->Field Dependency->Create new Field and Sync Product with Therapeutic Area Global and Therapeutic SubArea
 
 3. Make Therapeutic Sub Area Optional for Other Markets For all markets other than Global, GMPA, and Australia, Therapeutic Sub Area will be configured as a non-mandatory field. However, both Therapeutic Area and Therapeutic Sub Area will continue to be synchronized with the selected Product wherever applicable, ensuring data consistency while providing flexibility for local market requirements.
-
 Go to Admin->Configuration->Field Dependency->Create new Field and Sync Product with Therapeutic Area and Therapeutic SubArea Go to Admin->Configuration->Field Dependency->Add new filed Therapeutic SubArea and marked as visible
 
 
 Requirement Special-
 
 1) Restrict Email Notifications at the Workflow Level(INDIA) Problem
-
 Currently Suppose a user Aman involved in Promotional Workflow and Rahul involved in Non Promotional Workflow but both user have in same group because both have same user setup permission
 example
 Aman have application role which is Medical Reviewer India Material
@@ -26,8 +22,9 @@ so whenever any workflow run both getting notification from both workflow
 but acc to business logic Aman required for promotional and Rahul required for Non Promotional
 oso this create a major business problem because in business they will enter group not individual users
 
-Solution-
+Actual Business Requirement
 
+Solution-
 we will create separate application role for both user
 like this for Aman Medical Reviewer-promo and for Rahul Medical Reviewer-nonpromo
 this approach will create separate group for both.
@@ -38,50 +35,46 @@ so now Aman getting notification for Promotional Workflow and Rahul getting noti
 2)
 Therapeutic Area and Therapeutic Sub Area Enhancements
 Currently, there is a dependency between Therapeutic Area Global and Therapeutic Sub Area for Global, GMPA, and Australia. For other countries, such as Malaysia, the Therapeutic Area field is available but the Therapeutic Sub Area field is not available.
-
 Proposed Changes
 Remove Existing Dependency
-
 Eliminate the dependency between Therapeutic Area Global and Therapeutic Sub Area for:
 Global
 GMPA
 Australia
-
 This will be achieved by modifying the existing field configuration.
 Enable Therapeutic Sub Area for Other Countries (except global,gmpa,australia) Make the Therapeutic Sub Area field visible for other countries where it is currently not present (e.g Malaysia).
 The field will function independently without dependency on Therapeutic Area.
-
 Product Synchronization
 Ensure product synchronization supports both scenarios:
 Synchronize the updated Therapeutic Sub Area field for global, gmpa, australia with the Product
 Synchronize the newly visible Therapeutic Sub Area field for other countries with the Product.
-
 Expected Outcome
 Removal of the existing dependency between Therapeutic Area Global and Therapeutic Sub Area for Global, GMPA, and Australia.
 Availability of the Therapeutic Sub Area field for other countries (except global, gmpa,australia) Consistent synchronization of Therapeutic Sub Area data with the Product entity for both global,gmpa, australia and for other countries.
 
+Actual Business Requirement
+
 3) Add values:
-
 Add the following values to the "Project" dropdown list for the 'Global' context:
-
 MY SERVIER
 SHAPE
 Sorting: Arrange the entire dropdown list in alphabetical order.
 
-4) Please update "Project" dropdown list for the 'Global' for the values below
+Actual Business Requirement
 
+4) Please update "Project" dropdown list for the 'Global' for the values below
 EVERY MM HG MATTERS
 to be added
 AML AWARENESS DISEASE
 to be added
 UNBRANDED CAMPAIGN
 to be added
-
 CARDIOLOGUE
 to be deleted
-
 DEAUVILLE CONTEST
 to be deleted
+
+Actual Business Requirement
 
 5) The request is to modify the GMPA Workflow configuration by updating the "Therapeutic sub area" field values.
 A new entry, "METASTATIC UVEAL MELANOΜΑ, needs to be added to the existing list of values.
@@ -91,6 +84,8 @@ Padh dho field show ho rahi thi theraputic subarea or su therapeutic area
 Konsi field mein add karna hai
 Uske liye library mein gaye filter country global and document type material gmpa
 15-20 document open kiye tho sbse jyada therapeutic subarea use ho raha tha naa ki su therapeutic area tho issi mein add kiya
+
+Actual Business Requirement
 
 6) 4677-Japan(August)
 Business Admin->Picklist->Type of Workflow->Create picklist value "GMPA-Japan Review(Sevasemten)"
@@ -108,6 +103,7 @@ Type of workflow condition for Material GMPA.
 Admin->Configuration->Field dependency->search Material GMPA->add product "Sevasemten" in product picklist
 Admin->Configuration->Field dependency->search Material GMPA->add value "GMPA-Japan Review(Sevasemten)" in Type of Workflow picklist
 
+Actual Business Requirement
 
 7)4731-SouthKorea(August)
 Business Admin->Application role->create new application role Medical Lead Ltd
@@ -121,31 +117,26 @@ Security Setting->provide based on data collection for Medical Lead
 Admin->Configuration->Workflows->Korea Workflow Prom and Non Prom->update workflow
 Korea-Non Promotional as per visio
 
+Actual Business Requirement
+
 8) 4670-US release(august)
 1-Re-label Shared Document field "Therapeutic Area":
 Update Label to "Therapeutic Area - US"
-
 2 Create New "Therapeutic Area - US" picklist value:
 Picklist Value Label: "Neurology"
-
 3 Create New Product:
-
 Product Name = Ojenda
 Global Name = Ojemda
 INN = Tovorafenib
 Therapeutic Area = Oncology
-
 4Create New Product:
-
 Product Name = DAY301
 Global Name = DAY301
 INN = DAY301
 Therapeutic Area = Oncology
-
 SUpdate Field Dependency Rule for Commercial Material - US, Concept Material - US, Market Access Material - US, Medical Material - US, Multichannel Presentation, Multichannel Slide, Patient office Material-US, Email Fragment, Email Template
 DAY301
 Ojemda
-
 1) Field dependencies->create select controlled by field
 document type-as per required
 field-country
@@ -153,16 +144,15 @@ after select united states
 add DAY301,Oiemda these two in product picklist
 for Commercial Material - US, Concept Material - US, Market Access Material - US, Medical Material - US, Patient office
 Material-US
-
 2) Field dependencies->create select controlled by document type
 document type-as per required
 add DAY301,Ojemda these two in product picklist
 for Multichannel Presentation, Multichannel Slide, Email Fragment, Email Template,
-
 ques- find out the reason why two different field dependency like 1 and 2 to yash
 
-9) 3305-cluster (july)
+Actual Business Requirement
 
+9) 3305-cluster (july)
 Goto Business->object-> countries ->Create the cluster country -> "Adriatic".
 Go to Business Admin-> object->countries->Update below countries Inactive: Albania, 
 Bosnia and Herzegovina, Croatia, Montenegro, Serbia, Slovenia
@@ -199,3 +189,6 @@ Go to -> Admin -> Configuration -> Document lifecycles -> Binder Lifecycle -> St
 Entry Criteria-> Add Adriatic country and remove country - Bosnia and Herzagovina, Serbia, Slovenia, Albania, Croatia
 Go to -> Admin -> Configuration -> Document workflow-> Adriatic workflow 1-> Decision->
 Drug Agency Validation(For RS) ->update as based on state/province instead of country
+
+Actual Business Requirement
+
