@@ -23,6 +23,8 @@ but acc to business logic Aman required for promotional and Rahul required for N
 oso this create a major business problem because in business they will enter group not individual users
 
 Actual Business Requirement
+EVO] [INDIA] - Restriction of email notifications at the workflow level requires a workflow-3931
+Could you please restrict email notifications at the workflow level? For example, someone involved in the external communications workflow should only receive notifications for that specific workflow, and not for any others.
 
 Solution-
 we will create separate application role for both user
@@ -61,7 +63,42 @@ SHAPE
 Sorting: Arrange the entire dropdown list in alphabetical order.
 
 Actual Business Requirement
+Global] Update "Project" dropdown list - 152982-4291
 
+Please update "Project" dropdown list for the 'Global' for the values below
+
+EVERY MM HG MATTERS
+to be added
+
+AML AWARENESS DISEASE
+to be added
+
+UNBRANDED CAMPAIGN
+to be added
+
+CARDIOLOGUE
+to be deleted
+
+DEAUVILLE CONTEST
+to be deleted
+
+GI FRANCHISE
+to be deleted
+
+IDH FRANCHISE
+to be deleted
+
+NEW HTN PORTFOLIO
+to be deleted
+
+PATIENTE 360 PROGRAM
+to be deleted
+
+SCOPE
+to be deleted
+
+SOCIAL MEDIA CAMPAIGN
+to be deleted
 4) Please update "Project" dropdown list for the 'Global' for the values below
 EVERY MM HG MATTERS
 to be added
@@ -75,6 +112,20 @@ DEAUVILLE CONTEST
 to be deleted
 
 Actual Business Requirement
+[Global] Updating and sorting the Project drop-down list -153006-4376
+Description: The Global team would like the "Project" dropdown list to be updated, to reflect the new active projects and to facilitate selection through consistent sorting.
+Actions to be performed:
+1. Add values:
+Add the following values to the "Project dropdown list for the 'Global' context:
+MY SERVIER
+SHAPE
+
+2. Sorting:
+Arrange the entire dropdown list in alphabetical order.
+Acceptance Criteria:
+The options "MY SERVIER" and "SHAPE" are visible and selectable in the "Project" dropdown menu (Global scope)
+All options in the list appear in alphabetical order from A to Z.
+No legacy values are negatively impacted by this change.
 
 5) The request is to modify the GMPA Workflow configuration by updating the "Therapeutic sub area" field values.
 A new entry, "METASTATIC UVEAL MELANOΜΑ, needs to be added to the existing list of values.
@@ -86,6 +137,9 @@ Uske liye library mein gaye filter country global and document type material gmp
 15-20 document open kiye tho sbse jyada therapeutic subarea use ho raha tha naa ki su therapeutic area tho issi mein add kiya
 
 Actual Business Requirement
+For the GMPA Workflow, Update the list of "Therapeutic sub area" by adding the value: METASTATIC UVEAL MELAΝΟΜΑ-4418
+The request is to modify the GMPA Workflow configuration by updating the "Therapeutic sub area" field values. A new entry, "METASTATIC UVEAL MELANOMA," needs to be added to the existing list of values.
+
 
 6) 4677-Japan(August)
 Business Admin->Picklist->Type of Workflow->Create picklist value "GMPA-Japan Review(Sevasemten)"
@@ -104,6 +158,13 @@ Admin->Configuration->Field dependency->search Material GMPA->add product "Sevas
 Admin->Configuration->Field dependency->search Material GMPA->add value "GMPA-Japan Review(Sevasemten)" in Type of Workflow picklist
 
 Actual Business Requirement
+Japan - GMPA - New workflow for Edgewise-4677
+The medical materials intended for the WMS (World Muscle Society) congress, to be held in Japan in September 2026, needs to be approved in PromoMats.
+neral Secretariat
+I Secretariat Teams
+A new workflow specific to GMPA materials is required to manage the validation (see process design and analysis).
+1 Current: Initiatorà MIS review and approval à Completion
+
 
 7)4731-SouthKorea(August)
 Business Admin->Application role->create new application role Medical Lead Ltd
@@ -118,6 +179,22 @@ Admin->Configuration->Workflows->Korea Workflow Prom and Non Prom->update workfl
 Korea-Non Promotional as per visio
 
 Actual Business Requirement
+EVO] [South Korea] - Create a new role for "Korea - Non-Promotional Material workflow-4731
+
+Dear team,
+I am the Medical Information Specialist in Korea, and I would like to request an update to the non-promotional material review workflow in PromoMats.
+I Current: Initiatorà MIS review and approval à Completion
+I Proposed: Initiator à MIS 1^st review à Medical Lead 2^nd review and final approval
+The Medical Lead will be Hyesoo KANG (Hyesoo.kang@servier.com) who will request a PromoMats account shortly.
+Could you please add the Medical Lead review step to the non-promotional material review process?
+
+I would appreciate it if this update could be completed as soon as possible.
+Please let me know if any additional information is required.
+If possible, could you also share the estimated timeline for completing this update?
+
+Thank you for your support.
+Best regards,
+Heejin SEO (서희진)
 
 8) 4670-US release(august)
 1-Re-label Shared Document field "Therapeutic Area":
@@ -151,6 +228,13 @@ for Multichannel Presentation, Multichannel Slide, Email Fragment, Email Templat
 ques- find out the reason why two different field dependency like 1 and 2 to yash
 
 Actual Business Requirement
+[EVO] [US]-August Monthly US Release-4670
+1. Addition of the following PRODUCTS:
+a. Ojemda
+b. DAY301
+c. Emi-Le
+d. Sevasemten
+1. Addition of a therapeutic area for US: Neurology
 
 9) 3305-cluster (july)
 Goto Business->object-> countries ->Create the cluster country -> "Adriatic".
@@ -191,4 +275,21 @@ Go to -> Admin -> Configuration -> Document workflow-> Adriatic workflow 1-> Dec
 Drug Agency Validation(For RS) ->update as based on state/province instead of country
 
 Actual Business Requirement
+[EVO] [Adriatic] - New Cluster "AA"-3305
+Could you please take into account the modification request below following the clustering of the Adriatic entities? Adriatic Country Merge Activity to be performed in Veeva Vault Promomats
+
+1. Below are the countries to be merged in Adriatic
+a. Albania
+b. Montenegro
+c. Bosnia and Herzegovina
+d. Croatia
+e. Serbia
+f. Slovenia
+
+2. Create new Country - Adriatic in Veeva Vault Promomats.
+3. In the Promomats user should be able to select country as Adriatic for all type of documents and above merging country should be deactivated.
+4. Above mentioned country should be visible for State/Provence field when user select the country Adriatic
+5. Setup connection with Veeva vault Promomats test environment with Lynx CRM full sandbox for the testing of CLM and Approved email.
+6. Update the configuration for Material lifecycle for merging with Adriatic and also check and update the configuration of other document type.
+7. All the data for above merging ountry should be updated in Veeva Vault Promomats so that no issue occur in Lynx CRM system
 
