@@ -25,3 +25,47 @@ created means for France this field is visble so choose another Australia
 Now create placeholder you will see this field for Australia as well
 Here you dont create the field you just create the condition for already created field
 in which different-2 its need to be visible.
+
+1) Admin->Configuration->Document Field->Go to Material (274)->New Field (for newly creation) and Existing Shared Field (for using already available shared field)
+Field Type choose picklist (any other than Text because Text field is not visible at the time
+of field dependencies creation for Material) and Display Section choose Key Dates (anything you choose)
+
+Now Field look like
+ex-Western
+(westernc) Picklist
+Defined In: Material
+UI Section: Key Dates
+and hammerSign
+after tick User must always enter a value (required)
+flower sign also visible with hammer
+you will see option convert to shared field
+after clicking on it
+sharing sign, flower sign also visible with hammer
+and Sharing Field mein dikhega
+you will see option convert to non shared field
+after clicking on it
+flower sign also visible with hammer and Sharing Field mein nhi dikhega
+you will see option convert to stop using sharing Field
+after clicking on it
+flower sign also visible with hammer
+and Sharing Field mein dikhega and material se hat jayega
+
+Western
+(western c) Picklist
+Used in: None
+UI Section: Key Dates
+note-if you created field in Sharing Field these shared non-shared option is not visible to you and for using that 
+sharing field in material use Existing Shared Field in Material
+
+2) Field dependencies Controlled by document field
+
+1 Type-Material Field-Type of Workflow ok select KR-External Field Cartoon Network is required
+2 Type-Material Field-Cartoon Network ok select yes Field Ben10 is visible
+
+3) Cartoon Network Field look like Controlled By Type of Workflow Controls Ben10 when Cartoon Network is Yes
+Ben10 Field look like Controlled By Cartoon Network
+Controlled By yeh field kis padh dependent hai Control yeh kis field ko control karegi apni kis value padh
+
+4)
+Type-Material Field-CartoonNetwork ok select No Field DisneyNet is visible Document Field->
+DisneyNet and tick any picklist value for auto populate like PowerRanger in our case
