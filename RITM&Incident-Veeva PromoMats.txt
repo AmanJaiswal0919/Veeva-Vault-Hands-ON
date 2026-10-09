@@ -109,26 +109,24 @@ add document relationships when Multichannel Slide document is in the Approved s
 are getting that error message.As it is not an issue, could you please confirm the closure? If you 
 still want to add the document, kindly raise an RITM request by clicking the given link so we can do on your behalf.
 
-16-RITM0514032-France users and agency France for multichannel document view 
+16-RITM0514032
+prob- user is not able to see multichannel document
+sol-user is external user give France users and agency France 
 
-17-RITM0516269-reassign user for product manager role
+17-RITM0516269
+prob-no workflow owner for reassign
+sol- so i reassign user for product manager role
 
-18-INC0933494-3strike policy mein pending mein hi karni hai
+18-INC0933494
+prob-user is not able to see state province field
+sol-give viewer role and make sure 3strike policy mein pending mein hi karni hai
 
 19-RITM0518852-change owner for multiple document through reports
 Sol-Report->create->Document->continue
 two filter owner and created by and adjust column as per given sheet then run report click 3
 dots all document->next->select action change owner->give owner name->next
-11-RITM0501437
-12-RITM0502287
-13-INC0925568
-14-INC0706224 (which role allow you to binder option this will also add in solution)
-15-INC0928215
-16-RITM0514032
-17-RITM0516269
-18-INC0933494
-19-vdi slow incident raise
-20-sc not assigned incident raise
+
+20-sc not assigned incident raise-INC0937027
 
 21-INC0941649-not able to see material type 
 first check the user has required countryuser in group
