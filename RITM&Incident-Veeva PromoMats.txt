@@ -141,4 +141,7 @@ Scenario2-Initiator not able to see the particular role for selection of user.
 Not here in Scenario1-no configuration change required handle through incident or RITM.
 Scenarion2-configuration change required so jira need to be raised.
 
-Problem2-
+Problem2-A document is stuck In Review state How would you troubleshoot it.
+Problem3-A user is not able to see the workflow task and a workflow task is reach to wrong user.
+Problem4-Three reviewer must approved a document in parallel. How would you configure the workflow.
+Problem5-a vault loader 
