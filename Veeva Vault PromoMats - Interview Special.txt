@@ -9,6 +9,16 @@ with business user troubleshoot application related issues handling incident and
 service request and provide support for veeva monthly release activities Rightnow I am seeking 
 an opportunity where I further inhance my technical expertise and grow my tech career 
 in application support and development.
+or
+My name is Aman Jaiswal and I have a 2 yrs experience as a veeva Vault Developer 
+at Tata consultancy services where my primary responsibility to analyze buisness requirements 
+documented in jira and translate them into appropriate Vault Solution.
+Coming to my education i completed my btech in ece from GGSIPU 
+In my current role , i interact with business user troubleshoot production related issue, 
+handling incident and service request,configure workflows, and perform UAT and veeva monthly 
+release activities.Currently I am looking for an opportunity where I can further inhance my 
+technical expertise  and grow my career in application development.
+Thankyou
 
 1- What is Veeva Vault?
 
@@ -24,7 +34,7 @@ through review and approval workflow to ensure regulatory compliance.
 
 Modules in PromoMats
 
-1) MLR Review-manage the medical, legal and regulatory review process with workflow and approval. 
+1) MLR Review-manage the medical, legal and regulatory review and approve the workflow process.
 2) Claims Management-stores and manages promotional claims, link claims to reference and
 tracks claim usage across content. 
 3)Digital Asset Management (DAM)-central repository for storing, searching, versioning and
@@ -52,7 +62,7 @@ SSO Basic- required email and password to login
 SSO Azure- required only email to login
 
 6-What is lifecycle?
-A lifecycle defines that what are the different-2 states a document goes through during its life.
+A lifecycle defines that what are the different-2 states a document or object goes through during its whole life.
 ex Material and Review Lifecycle-document lifecycle
 
 7-What is workflow?
@@ -64,7 +74,7 @@ Main component of workflow
 Start-The first step executed when we create the workflow
 Control-Collect the information when the workflow starts.
 Workflow Steps-The sequence of tasks, decisions, actions and notification that make up the workflow
-Workflow Start Step Rules-Condition that determines when a workflow is available
+Start Step Rules-Condition that determines when a workflow is available
 Participants-User or Group involved in Workflow
 ex-Initiator
 Task-Activities assigned to participants that require actions
@@ -93,11 +103,11 @@ configured rules and document metadata such as country, product etc. How it work
 First Create Application Role(Medical Affairs)
 Material Review and Approval->Role->Create Lifecycle Role (Medical Affairs-HU) 
 and attach application role to it and Enable DAC All Users and Group
-
-User Account name-TestUser, select Country as Hungary and start the workflow so sharing rule
-trigger found similar metadata field like country-hungary on a document with user account 
-setup field such as country-hungary so Testuser will get all the security setting permission 
-of Medical affairs-HU role has on that document.
+example
+I would configure a sharing rule based on the Country field. 
+When a user selects required country and starts the workflow, the rule checks 
+for matching document metadata, such as Country and grants all the security setting 
+permission to the user associated with that role according to the document state.
 
 9-Explain User Action, Security Setting, Entry Criteria, Entry Actions?
 Security Settings-It applies on a document level what a user can do 
@@ -214,6 +224,16 @@ then sent a uat mail to user paste that mail to in requirement wait for user uat
 confirmation after confirmation paste that confirmation mail to in requirement
 send a mail to Manon then Manon will change to it in Ready for Dev by clicking ready for prod
 In production after deployment we change to Dileverd in Prod by clicking Deliverd Prod 
+or
+Analyse TMA: Understand the requirement and its acceptance criteria within the analysis deadline.
+POC and estimation: Test feasibility where necessary and estimate effort.
+Refinement: Finalize the solution and dependencies.
+Go Dev: Start the approved implementation.
+Sandbox: Configure and test the solution; prepare deployment scripts and evidence.
+UAT: Send the UAT email, capture user feedback, and record confirmation.
+Ready for Prod: Send the required evidence and notification to the responsible approver.
+Production: Deploy, perform validation, and update the requirement to Delivered in Prod.
+
 
 24-Difference between Picklist vs Field vs Object?
 Object- What are we managing
@@ -240,7 +260,31 @@ for a metadata field from a  configuration document field in admin.
 Like Promotion Type-> promotion_type__v, Type of Workflow->
 
 27-what is versioning in veeva vault? difference between major and minor version?
+Document versioning maintains a history of changes made to a document. In Vault, versions help users track revisions and identify which version is approved for use.
+Example:
+Version 0.1 — Initial draft
+Version 0.2 — Draft updated
+Version 1.0 — Approved version
+Version 2.0 — New major revision approved
+These are illustrative examples; the exact version sequence depends on Vault configuration and the document's lifecycle.
+2. Major vs. minor version
+Major version Minor version
+Represents a significant revision. Represents a smaller revision.
+Example: 1.0 → 2.0 Example: 1.0 → 1.1
+May require a new approval cycle, depending on configuration. May also require review, depending on configuration.
+
+
 28-a vault loader job fails for some records what would you do?
+Review the job summary and row-level errors.
+Identify invalid document IDs, field API names, picklist values, or permissions.
+Correct the source CSV.
+Test a small batch.
+Rerun the failed records and verify the updated metadata.
+
 29-explain end to end requirement delivery process?
+already answered jira uat explanation
+
 30-a worklow work in sandbox but fail in production,a production change cause a issue how would you handle it,
 how do you test a workflow before deploying it?
+Compare the environments for differences in workflow configuration, lifecycles, permissions, field values, deployed components, and dependencies. Verify the deployment results and reproduce the issue safely before correcting it.
+Prepare positive and negative test cases covering all branches, verdicts, user roles, and metadata conditions. Verify task assignment, notifications, state transitions, and error handling. Perform regression testing and obtain UAT confirmation.
