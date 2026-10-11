@@ -144,5 +144,11 @@ Scenarion2-configuration change required so jira need to be raised.
 Problem2-A document is stuck In Review state How would you troubleshoot it.
 Problem3-A user is not able to see the workflow task and a workflow task is reach to wrong user.
 Problem4-Three reviewer must approved a document in parallel. How would you configure the workflow.
+Configure a Parallel Split.
+Create Medical, Legal, and Regulatory review tasks.
+Assign each task to the appropriate user or lifecycle role.
+Add a Join to wait for the required branches.
+Add a Decision to evaluate the verdicts.
+Route all-approved documents forward and changes-required documents back for rework.
 Problem5-A document is in Approved for Use at version 1.0 the user want to make some change what will you do
 and reclassification from material to multichannel slide will cause its version  always?
