@@ -240,3 +240,7 @@ for a metadata field from a  configuration document field in admin.
 Like Promotion Type-> promotion_type__v, Type of Workflow->
 
 27-what is versioning in veeva vault? difference between major and minor version?
+28-a vault loader job fails for some records what would you do?
+29-explain end to end requirement delivery process?
+30-a worklow work in sandbox but fail in production,a production change cause a issue how would you handle it,
+how do you test a workflow before deploying it?
