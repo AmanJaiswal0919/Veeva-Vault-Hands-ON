@@ -135,6 +135,10 @@ then use country affiliates in group for material
 but user want all document types to see simply
 use unfiltered affiliates.
 
+Problem1-Initiator is not able to select the participant after start the workflow by clicking start workflow button.
+Scenario1-Initiator not able to select the required user for a particular role.
+Scenario2-Initiator not able to see the particular role for selection of user.
+Not here in Scenario1-no configuration change required handle through incident or RITM.
+Scenarion2-configuration change required so jira need to be raised.
 
-
-
+Problem2-
