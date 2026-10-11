@@ -238,3 +238,5 @@ The Vault API name is unique technical name of a metadata field.Its different fr
 field label name It is used in API request to read and update the field we can find the api name 
 for a metadata field from a  configuration document field in admin.
 Like Promotion Type-> promotion_type__v, Type of Workflow->
+
+27-what is versioning in veeva vault? difference between major and minor version?
