@@ -151,7 +151,12 @@ Not here in Scenario1-no configuration change required handle through incident o
 Scenarion2-configuration change required so jira need to be raised.
 
 Problem2-A document is stuck In Review state How would you troubleshoot it.
+answer-
+check all approver must complete their task only then it will move next stage
+check whether the correct role assign to user or not to perform the task
+
 Problem3-A user is not able to see the workflow task and a workflow task is reach to wrong user.
+answer-
 Problem4-Three reviewer must approved a document in parallel. How would you configure the workflow.
 Configure a Parallel Split.
 Create Medical, Legal, and Regulatory review tasks.
