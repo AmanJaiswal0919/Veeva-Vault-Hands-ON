@@ -137,7 +137,16 @@ use unfiltered affiliates.
 
 Problem1-Initiator is not able to select the participant after start the workflow by clicking start workflow button.
 Scenario1-Initiator not able to select the required user for a particular role.
+answer-
+check user role setup the required role is not assigned to user
+check if user account is inactive and user profile read only user cannot participate
+check user dac exact same as the auto managed group which we need to enter in particular role
+medical reviewer role so if you want to select all user once which have medical reviewer so everyone has same dac.
+
 Scenario2-Initiator not able to see the particular role for selection of user.
+answer-
+check start step rule dependency
+whether you forget to made at the time of participants making
 Not here in Scenario1-no configuration change required handle through incident or RITM.
 Scenarion2-configuration change required so jira need to be raised.
 
