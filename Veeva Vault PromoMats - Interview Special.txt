@@ -260,7 +260,8 @@ for a metadata field from a  configuration document field in admin.
 Like Promotion Type-> promotion_type__v, Type of Workflow->
 
 27-what is versioning in veeva vault? difference between major and minor version?
-Document versioning maintains a history of changes made to a document. In Vault, versions help users track revisions and identify which version is approved for use.
+Document versioning maintains a history of changes made to a document. In Vault, versions 
+help users track revisions and identify which version is approved for use.
 Example:
 Version 0.1 — Initial draft
 Version 0.2 — Draft updated
@@ -284,7 +285,14 @@ Rerun the failed records and verify the updated metadata.
 29-explain end to end requirement delivery process?
 already answered jira uat explanation
 
-30-a worklow work in sandbox but fail in production,a production change cause a issue how would you handle it,
-how do you test a workflow before deploying it?
-Compare the environments for differences in workflow configuration, lifecycles, permissions, field values, deployed components, and dependencies. Verify the deployment results and reproduce the issue safely before correcting it.
-Prepare positive and negative test cases covering all branches, verdicts, user roles, and metadata conditions. Verify task assignment, notifications, state transitions, and error handling. Perform regression testing and obtain UAT confirmation.
+30-a worklow work in sandbox but fail in production,a production change cause a 
+issue how would you handle it,how do you test a workflow before deploying it?
+Compare the environments for differences in workflow configuration, lifecycles, 
+permissions, field values, deployed components, and dependencies. Verify the deployment results
+and reproduce the issue safely before correcting it.Prepare positive and negative test cases covering 
+all branches, verdicts, user roles, and metadata conditions. Verify task assignment, notifications, 
+state transitions, and error handling. Perform regression testing and obtain UAT confirmation.
+
+31-The user is not able to see their task for approval?
+32-Workflow start button is not visible to user?
+
