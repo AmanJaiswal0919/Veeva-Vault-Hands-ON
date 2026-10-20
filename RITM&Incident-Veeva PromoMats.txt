@@ -157,6 +157,10 @@ check whether the correct role assign to user or not to perform the task
 
 Problem3-A user is not able to see the workflow task and a workflow task is reach to wrong user.
 answer-
+correct role is not assigned to user
+before user see their task the previous user must complete their task acc to workflow
+the required role is assigned to other user so it reach to wrong user
+
 Problem4-Three reviewer must approved a document in parallel. How would you configure the workflow.
 Configure a Parallel Split.
 Create Medical, Legal, and Regulatory review tasks.
