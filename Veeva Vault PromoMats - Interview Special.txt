@@ -293,6 +293,3 @@ and reproduce the issue safely before correcting it.Prepare positive and negativ
 all branches, verdicts, user roles, and metadata conditions. Verify task assignment, notifications, 
 state transitions, and error handling. Perform regression testing and obtain UAT confirmation.
 
-31-The user is not able to see their task for approval?
-32-Workflow start button is not visible to user?
-
