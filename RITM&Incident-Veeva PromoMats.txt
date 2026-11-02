@@ -170,3 +170,18 @@ Add a Decision to evaluate the verdicts.
 Route all-approved documents forward and changes-required documents back for rework.
 Problem5-A document is in Approved for Use at version 1.0 the user want to make some change what will you do
 and reclassification from material to multichannel slide will cause its version  always?
+
+
+
+-The user who start the workflow is called workflow owner-see in timeline view
+-The user who upload a document is called document owner-see in sharing setting
+-if you want to see a lifecycle role to available in sharing setting of document so Allowed Group-All Users and Groups select karna
+-report owner bulk action change the document owner not the workflow owner.
+
+-Atomic security
+when you create a user action its auto make and by default
+Execute in Atomic security means visible to initiator
+Default mein jakar three option
+Hide, View karne se nhi dikhega workflow start button
+Only Execute karne padh dikhega jo ki by default already hoga
+waah padh after creating a user action
