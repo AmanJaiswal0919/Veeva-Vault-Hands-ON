@@ -235,8 +235,8 @@ Instruction-Write Something you want to see when user start the workflow
 by clicking Start Workflow Button
 Participants-Give Participant Label, select Allow workflow initiator to select the participants 
 and Choose Role allowed to participate choose and tick these two
-Allow task instructions for these participants,
-Default users from sharing settings
+Allow task instructions for these participants-tick if you want to see a instruction in start dialog box
+Default users from sharing settings-tick to see auto group fill from sharing rules if not tick you have to select from dropdown no autofill.
 Participant Label user will see this name in Start Dialog box after start the workflow
 by clicking Start Workflow Button Role allowed to participate-choose here required lifecycle role
 Allow task instructions for these participants-need to investigate
