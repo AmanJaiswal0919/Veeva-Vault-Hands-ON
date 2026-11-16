@@ -174,13 +174,58 @@ Admin->Configuration->Field dependency->search Material GMPA->add product "Sevas
 Admin->Configuration->Field dependency->search Material GMPA->add value "GMPA-Japan Review(Sevasemten)" in Type of Workflow picklist
 
 Actual Business Requirement
-Japan - GMPA - New workflow for Edgewise-4677
 The medical materials intended for the WMS (World Muscle Society) congress, to be held in Japan in September 2026, needs to be approved in PromoMats.
 neral Secretariat
 I Secretariat Teams
 A new workflow specific to GMPA materials is required to manage the validation (see process design and analysis).
 1 Current: Initiatorà MIS review and approval à Completion
 
+Developer analysis
+A specification document will be created for the workflow "GMPA Japan Review (Sevasemten)" 
+based on the Visio diagram provided in the requirement.
+The workflow will be configured in the Development (Dev) environment according to the approved
+Visio design, followed by a Demo.
+The new lifecycle roles will use the same sharing rules as the existing GMPA roles.
+For example, the Initiator GMPA. The document due date will follow the existing GMPA logic
+and will be calculated as Task Creation Date + 10 Days.
+A new value, "GMPA Japan Review (Sevasemten)", will be added to the Type of Workflow picklist for the GMPA market.
+We will add new value "GMPA Japan Review (Sevasemten)" in the Field Dependency of GMPA and 
+Picklist equals "Type of Workflow".User actions will be configured and implemented as defined in the requirements.
+A Data Collection file will be created for the new roles, and the document states in the Visio will 
+be updated according to the table provided below.
+
+Previous Document States
+Draft
+In Review
+In Approval
+Approved for Use
+
+New Document States
+Draft
+Submitted for Review State
+Submitted for Validation State
+Validated
+
+We will Create new roles with lifecycle roles and Application roles as mentioned below.
+
+Workflow role label
+Initiator GMPA
+Medical Manager
+Medical Affairs Head
+
+Lifecycle Roles
+Initiator GMPA-Japan
+Medical Manager-GMPA-Japan
+Medical Affairs Head-GMPA-Japan
+
+Application Roles
+Initiator GMPA-Japan
+Medical Manager-GMPA-Japan
+Medical Affairs Head-GMPA-Japan
+We will perform the testing for the above changes.
+
+my analysis
+why he created new states and role?
 
 7)4731-SouthKorea(August)
 Business Admin->Application role->create new application role Medical Lead Ltd
