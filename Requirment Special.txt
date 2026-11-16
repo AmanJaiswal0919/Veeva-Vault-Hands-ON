@@ -257,6 +257,21 @@ Thank you for your support.
 Best regards,
 Heejin SEO (서희진)
 
+developer analysis
+We will create/update the Visio and Specification of the workflow "Korea Non-Promotional 
+Material" for the South Korea market. Non-Promotional Material"
+We will create a new role called "Medical Lead" for the workflow "Korea
+We will create the Lifecycle role and Application for the Medical Lead role.
+We will keep the same sharing rules for the new role "Medical Lead" used by the South Korea market.
+We will update the Data Collection file for the South Korea market.
+We will update the workflow "Korea Non-Promotional Material" after receiving confirmation of the Visio/Specification 
+and Data collection file from the market.
+We will retest the workflow and verify that everything is working as expected.
+
+my analysis
+if same sharing used role is using like parent role what is the purpose of making new lifecycle role and application role
+
+
 8) 4670-US release(august)
 1-Re-label Shared Document field "Therapeutic Area":
 Update Label to "Therapeutic Area - US"
@@ -354,6 +369,34 @@ f. Slovenia
 6. Update the configuration for Material lifecycle for merging with Adriatic and also check and update the configuration of other document type.
 7. All the data for above merging ountry should be updated in Veeva Vault Promomats so that no issue occur in Lynx CRM system
 
+developer analysis
+A new Cluster Country called Adriatic will be created.
+The following countries will be made inactive:
+Albania Bosnia and Herzegovina Croatia Montenegro Serbia Slovenia
+
+New State/Province records will be created for:
+Albania
+Bosnia and Herzegovina
+Croatia
+Montenegro Serbia
+Slovenia
+
+Field dependencies will be updated for these document types, and the Adriatic Cluster Country will be linked to the appropriate State/Province values:
+Material
+Referenced Documents
+Multichannel Slide
+Multichannel Presentation
+Email Template
+Email Fragment
+User Actions, Entry Actions, and Entry Criteria for Albania, Bosnia and Herzegovina, Croatia, Montenegro,
+Serbia, and Slovenia will be be updated based on the requirement. The existing "Adriatic Workflow 2" 
+workflow will be reviewed and updated as needed.
+Integrate with Lynx CRM in both test and production environment.
+Testing and validation will be carried out to ensure all document types, workflows, lifecycle stages, and market-specific processes work correctly after the changes are implemented.
+
+my analysis
+how integration happened with lynx crm?
+
 3512
 Actual Business Requirement
 [Panama] New Workflow 'External Communication'-3512
@@ -364,6 +407,16 @@ This workflow is nearly the same as 'Internal Communication Workflow' but withou
 3. Go to Admin-> Configuration->Workflows ->Update/add the "External Communication" workflow in the Marged workflow "PANAMA- Simplified/Internal/External WF1" as per the new Visio and specification.
 4. Go to Admin->Configuration->Material review and life cycle ->states-> Draft -> user action -> Add value "External Communication Panama" in the "Type of workflow" condition for Panama as mentioned in below screenshot.
 5. Go to Admin->Configuration->Field dependency ->search for country "Panama" and Document Type as "Material"-> add the value "External Communication Panama" in the picklist value of "Types of workflows".
+
+developer analysis
+We will create a new workflow named "External Communication" as per the Visio and specification shared in the requirement.
+We will create a new value "External Communication" for picklist "Type of workflow".
+We will use already available user roles used by the Panama market to create "External communication" workflow.
+We will test the workflow to determine whether everything is working fine or not.
+Please note that we have already taken 40 points for POC to check the already available workflows are working as expected and after adding the External Communication workflow it will not impact to other workflows.
+
+my analysis
+
 
 3503
 Actual Business Requirements
@@ -416,3 +469,17 @@ b) Create rule for Country and Document type Group
 9.Go to Admin->Configuration->Field dependency ->search for country "Panama" and Document Type as "Material"-> check the field dependencies are updated after updation of picklist values of "Types of workflow"
 1. "Communication Workflow" to "Internal Communication"
 2. "Translation Material" to "Simplified Material"
+
+developer analysis
+We need to Update the workflow "PANAMA-Prom/Non-Prom Material" by adding/creating the new role
+"Regulatory Affairs Servier" for the path "Material type(PA)" as "Training" and also need to keep the remaining workflow as it is.
+We need to update the workflow "Event Material" and add/Create the below two new roles and keep the flow as it is.
+i. Regulatory Affairs Servier
+ii. Product Manager Servier
+3- We will keep the workflow "Medical Department Material" as it is and will not make any changes. 4- We will update the name of the workflow from "Communication workflow" to "Internal Communication".
+5- we will remove/inactive the workflow "Promo / NON-PROMOTIONAL Material for Trade & Market Access". 6- We need to Update the name of the workflow from "Translation workflow" to "Simplified Material".
+7- We need to update the workflow "Simplified Material" and add/create the below two new roles and keep the flow as it is.
+1. Regulatory Affairs Servier
+ii. Medical Affairs Servier
+8- We need to update the Visio and Specification for all below workflows.
+
