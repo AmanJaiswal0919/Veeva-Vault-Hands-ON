@@ -56,70 +56,57 @@ Availability of the Therapeutic Sub Area field for other countries (except globa
 
 Actual Business Requirement
 
-3) Add values:
-Add the following values to the "Project" dropdown list for the 'Global' context:
-MY SERVIER
-SHAPE
-Sorting: Arrange the entire dropdown list in alphabetical order.
-
-Actual Business Requirement
-Global] Update "Project" dropdown list - 152982-4291
-
+3) 4291 Actual Business Requirement
+Global] Update "Project" dropdown list - 152982
 Please update "Project" dropdown list for the 'Global' for the values below
 
 EVERY MM HG MATTERS
 to be added
-
 AML AWARENESS DISEASE
 to be added
-
 UNBRANDED CAMPAIGN
 to be added
-
 CARDIOLOGUE
 to be deleted
-
 DEAUVILLE CONTEST
 to be deleted
-
 GI FRANCHISE
 to be deleted
-
 IDH FRANCHISE
 to be deleted
-
 NEW HTN PORTFOLIO
 to be deleted
-
 PATIENTE 360 PROGRAM
 to be deleted
-
 SCOPE
 to be deleted
-
 SOCIAL MEDIA CAMPAIGN
 to be deleted
-4) Please update "Project" dropdown list for the 'Global' for the values below
-EVERY MM HG MATTERS
-to be added
-AML AWARENESS DISEASE
-to be added
-UNBRANDED CAMPAIGN
-to be added
-CARDIOLOGUE
-to be deleted
-DEAUVILLE CONTEST
-to be deleted
 
-Actual Business Requirement
-[Global] Updating and sorting the Project drop-down list -153006-4376
+Developer analysis
+As per requirement we need to update the field in project for global country.
+We will test and reverify whether all the functionality is working as expected.
+We need to check the other countries impact also like France, Australia, Hungary, India etc.
+We will prepare IQ document for Test and Prod for this requirement.
+
+My analysis
+As per requirement, we need to update project field values for global market we will check after updating 
+whether all the functionality is working as before.
+(how to->check dependency, dryrun a workflow, check another market uses this field or not if yes then 
+user wants for global only set dependency for it in this only global is using)
+We need to check the other countries impact also like France, Australia, Hungary, India, china.
+We will prepare IQ document for Test and Prod for this requirement.
+
+table making
+
+4) 4376 Actual Business Requirement
+[Global] Updating and sorting the Project drop-down list -153006
 Description: The Global team would like the "Project" dropdown list to be updated, to reflect the new active projects and to facilitate selection through consistent sorting.
 Actions to be performed:
 1. Add values:
 Add the following values to the "Project dropdown list for the 'Global' context:
 MY SERVIER
 SHAPE
-
 2. Sorting:
 Arrange the entire dropdown list in alphabetical order.
 Acceptance Criteria:
@@ -127,18 +114,47 @@ The options "MY SERVIER" and "SHAPE" are visible and selectable in the "Project"
 All options in the list appear in alphabetical order from A to Z.
 No legacy values are negatively impacted by this change.
 
-5) The request is to modify the GMPA Workflow configuration by updating the "Therapeutic sub area" field values.
-A new entry, "METASTATIC UVEAL MELANOΜΑ, needs to be added to the existing list of values.
-Hme metal picklist value add karni thi theraputic sub area field mein
-Material gmpa ke liye
-Padh dho field show ho rahi thi theraputic subarea or su therapeutic area
-Konsi field mein add karna hai
-Uske liye library mein gaye filter country global and document type material gmpa
-15-20 document open kiye tho sbse jyada therapeutic subarea use ho raha tha naa ki su therapeutic area tho issi mein add kiya
+Developer analysis
+As per the requirement we will add "MY SERVIER" and "SHAPE" value in project field for global country.
+We will arrange the project value in alphabetically order.
+We will test and reverify whether all the functionality is working as expected.
+We will check the other countries impact also like France, Australia, Hungary, India etc.
+We will prepare IQ document for Test and Prod for this requirement.
 
-Actual Business Requirement
+My analysis
+As per requirement, we need to add these two "MY SERVIER" and "SHAPE"
+in project field for global market
+We will arrange the project value in alphabetically order.
+we will check after add these two values whether all the functionality is working as before.
+(how to->check dependency, dryrun a workflow, check another market uses this field or not if yes
+then user wants for global only set dependency for it in this only global is using)
+We need to check the other countries impact also like France, Australia, Hungary, India, china.
+We will prepare IQ document for Test and Prod for this requirement.
+
+table making
+
+5) 4418 Actual Business Requirement
 For the GMPA Workflow, Update the list of "Therapeutic sub area" by adding the value: METASTATIC UVEAL MELAΝΟΜΑ-4418
-The request is to modify the GMPA Workflow configuration by updating the "Therapeutic sub area" field values. A new entry, "METASTATIC UVEAL MELANOMA," needs to be added to the existing list of values.
+The request is to modify the GMPA Workflow configuration by updating the "Therapeutic sub area" field values. 
+A new entry, "METASTATIC UVEAL MELANOMA," needs to be added to the existing list of values.
+
+Developer analysis 
+We will add the value "METASTATIC UVEAL MELANOMA" to the "Therapeutic SubArea" picklist
+for Document type Material GMPA. We will check whether adding this value impacts other markets or any existing functionality.
+We will perform the necessary testing to ensure the requirement is implemented and working as expected.
+
+my analysis
+As per requirement, we need to add "METASTATIC UVEAL MELANOMA" to the "Therapeutic SubArea" picklist
+for Document type Material GMPA.
+We will check whether adding this value impacts other markets or 
+any existing functionality. (we find out there is two therapeutic subarea field one is therapeutic 
+subarea second is sub therapeutic area under which one need to add so we go in library filter country-global, 
+document type-material gmpa open 15-20 documents then observe therapeutic subarea field is most used so 
+add value in this field only.how to->check dependency, dryrun a workflow, check another market 
+no need because material gmpa using Global(gmpa) only)
+We need to check the other countries impact also like France, Australia, Hungary, India, china.
+no iq here-gmpa market not global if its pure global then only
+We will perform the necessary testing to ensure the requirement is implemented and working as expected.
 
 
 6) 4677-Japan(August)
